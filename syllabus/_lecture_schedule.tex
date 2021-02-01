@@ -1,0 +1,66 @@
+\subsection*{Lecture Schedule}
+
+Below is a tentative detailed enumeration of the lectures, topics with time estimates below:
+
+%341 / 641: Introduction to Frequentist and Bayesian Statistical Inference, Coreq: 340
+%343 / 643: Computational Statistical Inference and Experimentation, Coreq: 342
+
+\begin{enumerate}
+\item[Lec 1] [40min] Review of discrete and continuous random variables (rvs), support, probability mass functions (PMFs), cumulative distribution functions (CDFs), probability density functions (PDFs); joint mass functions (JMFs), joint density functions (JDFs), independence, iid multiplication rule; [20min] the Bernoulli rv, parameters, parameter space, degenerate rv; [5min] parametric models; [10min] statistical inference and its three goals
+
+\item[Lec 2] [30min] the likelihood function, the log-likelihood function, example with iid Bernoulli, example with iid Geometric; [20min] the MLE and properties of the MLE; [10min] introduction to frequentist confidence intervals (CIs); [15min] intoduction to hypothesis testing and frequentist retainment regions
+
+\item[Lec 3] [30min] Problems and limitations with frequentist CIs and testing, valid interpretation of frequentist CIs, the frequentist p-value; [35min] review of definition of conditional probability, Bayes Rule, Bayes Theorem; [10min] marginal and conditional PMFs
+
+\item[Lec 4] [10min] Bayes rule for two rvs; [10min] anatomy of the Bayes identity: the likelihood, prior, prior predictive distribution and posterior distribution; [40min] example posterior calculation with discrete parameter space and principle of indifference; [15min] Bayesian point estimation with the maximum a posteriori (MAP) estimate, conditions for equivalence with the MLE
+
+\item[Lec 5] [25min] Proof that Bayesian Inference is iterative in the data; [15min] uniform prior for the bernoulli iid model; [10min] Bayesian point estimation with the posterior median and posterior expectation; [20min] derivation of general beta posterior for the bernoulli iid model, intro to beta distribution, beta function, gamma function; [5min] point estimation with beta posterior
+
+
+\item[Lec 6] [10min] all legal shapes of the beta distribution; [35min] the beta-binomial bayesian model; prior parameters (hyperparameters) and posterior parameters, point estimates; [10min] definition of conjugacy, beta-binomial conjugacy; [10min] pseudodata interpretation of the prior parameters; [10min] shrinkage estimators and the beta-binomial posterior expectation as a shrinkage estimator
+
+\item[Lec 7] [15min] One-sided and two-sided credible regions (CRs); [5min] CR for beta-binomial model; [10min] high density regions; [20min] one-sided and two-sided Hypothesis testing and the decisions to reject or retain the null; [10min] decisions in the Bayesian framework for one-sided hypothesis testing, Bayesian p-values; [15min] beta-binomial examples
+
+
+\item[Lec 8] [20min] two approaches for two-sided testing in the Bayesian framework; [40min] posterior predictive distribution formula, example for one future observation in the beta-binomial model; [15min] mixture and compound distributions
+
+\item[Lec 9] [65min] the betabinomial distribution as an overdispersed binomial, example with birth data, proof of the general posterior predictive distribution for the beta-binomial model; [10min] Laplace and Haldane priors
+
+
+\item[Lec 10] [25min] Informative priors for the beta-binomial model, example with baseball batting averages, shrinkage in informative priors, empiral Bayes estimation; [10min] definition of odds, reparameterization of the binomial with odds; [5min] PDF change of variables formula, proof that prior of indifference for binomial probability is not prior of indifference for odds; [15min] Jeffrey's prior specification concept; [10min] PDF/PMF decomposition into kernel and normalization constants; [10min] definition of Fisher information, computation of Fisher information for the binomial distribution
+
+\item[Lec 11] [30min] Definition of Jeffrey's prior, derivation of Jeffrey's prior for the beta-binomial model, verification that it robust to reparameterizations of the binomial model's parameter; [10min] proof of Jeffrey's prior satisfies  Jeffrey's prior specification concept; [10min] derivation of Poisson model; [15min] derivation of the Poisson model's conjugate prior via kernel decomposition (the Gamma); [20min] Gamma shapes and properties
+
+%-10min
+\item[Lec 12] [15min] pseudodata interpretation of hyperparameters in the gamma-poisson model; [20min] derivation of the shrinkage point estimator for the gamma-poisson model; [10min] CRs for the gamma-poisson model; [20min] uninformative priors for the gamma-poisson model;
+
+\item[Lec 13] [45min] derivation of the posterior predictive distribution being extended negative binomial in the gamma-poisson model; [15min] kernel decomposition of the normal PDF; [15min] Normal posterior under laplace prior
+
+
+\item[Lec 14] [75min] derivation of the normal-normal conjugate model, pseudodata interpretation of the hyperparameters, Haldane prior, point estimation in the normal-normal model, Jeffrey's prior derivation, shrinkage estimator
+
+\item[Lec 15] [40min] derivation of the normal posterior predictive distribution for the normal-normal model; [10min] derivation of the inversegamma distribution, properties of the inverse gamma distribution [35min] normal-inversegamma model, laplace prior, pseudodata interpretation of the hyperparameters, haldane prior
+
+%-10
+\item[Lec 16] [10min] point estimation in the normal-inversegamma model; [15min] Jeffrey's prior derivation for the normal-inversegamma model; [30min] derivation of the Student's T posterior predictive distribution for the normal-inversegamma model; [10min] shrinkage estimation in the normal-inversegamma model
+
+
+\item[Lec 17] [75min] The two-dimensional  normal-inverse-gamma (NIG) distribution, its kernel, its use in bayesian inference for the conjugate NIG-NIG model
+
+%+10
+\item[Lec 18] [15min] Marginal mean T distribution in the NIG posterior; [15min] Marginal variance inverse-gamma distribution in the NIG posterior; [55min] derivation of the Student's T posterior predictive distribution in the NIG-NIG model
+
+\item[Lec 19] [30min] Sampling from the NIG distribution; [45min] the kernel of the semiconjugate NIG model
+
+\item[Lec 20] [35min] Grid sampling, distribution sampling via kernel grid sampling, disadvantages of grid sampling; [40min] systematic sweep Gibbs sampling, burning the chain, sampling from the semi-conjugate NIG model
+
+\item[Lec 21] [20min] Autocorrelation grid sampling, thinning the chain; [30min] approximate inference with Gibbs samples; [25min] change point detection model
+
+%+15min
+\item[Lec 22] [55min] normal mixture model with data augmentation; [35min] Bayes Factors
+
+%-15min
+\item[Lec 23] [60min] Metropolis algorithm, Metropolis-Hastings algorithm, metropolis-within-Gibbs, transition kernels
+
+
+\end{enumerate}

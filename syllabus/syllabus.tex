@@ -1,0 +1,143 @@
+\documentclass[12pt]{article}
+
+\usepackage[margin=1.1in]{geometry}
+\input{../../syllabi/preamble}
+
+\newcommand{\coursedept}{Math}
+\newcommand{\coursenumber}{341}
+\newcommand{\coursenumbercrosslisted}{/ 650.03~}
+\newcommand{\semester}{Spring}
+\newcommand{\numcredits}{3}
+\newcommand{\lectimeandloc}{Mon and Wed 3:10 -- 4:25PM / on zoom}
+\newcommand{\requiredlabtimeandloc}{}
+\newcommand{\tataofficehourtimeandloc}{TA 	/ TA Office Hours / Loc 			& Abhinav Patil / TBD week-week / on zoom}
+\newcommand{\coursewebpageurl}{https://github.com/kapelner/QC_\coursedept_\coursenumber_\semester_\the\year}
+\newcommand{\coursewebpagelink}{\href{\coursewebpageurl}{course homepage}}
+\newcommand{\slackurl}{https://QC\coursedept\coursenumber\semester\the\year.slack.com/}
+\newcommand{\slacklink}{\href{\slackurl}{slack}}
+\newcommand{\numtheoryhws}{7--10}
+\newcommand{\extrahwzero}{\item provide a link to your public repository on github (this means you need to sign up for github first)}
+\newcommand{\hwzerodue}{Wednesday, Feb 3 11:59PM}
+\newcommand{\lastdatetimetohandinhomeworks}{May 18 at noon}
+\newcommand{\midtermonedateandlocation}{Wednesday, March 3 on zoom during class time}
+\newcommand{\midtermtwodateandlocation}{Wednesday, April 21 on zoom during class time}
+\newcommand{\finaldateandlocation}{TBD but on zoom}
+
+\input{../../syllabi/_header}
+
+\section*{Course Overview}
+
+MATH 341. Bayesian Modeling. 3 hr.; 3 cr. Prereq.: MATH 241. A review of frequentist methods followed by a survey of statistical modeling using the Bayesian framework: prior distribution design, including Jeffrey’s priors; likelihood models; posterior probabilities; hypothesis tests; Bayesian linear regression; Gibbs sampling; Metropolis-Hastings (basic Bayesian computing).  Emphasis on real-world applications, including those in finance and applied probability. The goal is to be fluent enough to understand how industry uses Bayesian modeling and computation by the end of the course.
+
+Statistics has historically been taught from the frequentist perspective. Recently, the Bayesian perspective has become popular (1) due to their models' performance on previously intractable problems and the recent availability of inexpensive computational power and (2) it solves many philosophical quandaries in the Frequentist perspective. Further, many scientific journals are moving away from Frequentist p-values and confidence intervals in favor of the Bayesian analogues. It is imperative to learn this perspective as you will see these models in industry and this mode of thinking is becoming mainstream in science at large. \pagebreak
+
+
+Here are the main topics to be covered:
+
+\begin{itemize}
+\itemsep -0.0em 
+\item Data modeling with parametric families
+\item Bayes Rule as it applies to parameters
+\item prior distribution design 
+\item Jeffrey's priors 
+\item likelihood models and maximum likelihood estimators
+\item posterior probabilities 
+\item Bayesian inference: credibility intervals 
+\item Bayesian inference: p-values for hypothesis tests
+\item mixture priors 
+\item mixture models
+\item Newton-Raphson and Expectation-Maximization Algorithms
+\item basic computing for Bayesian models including Gibbs sampling and Metropolis-Hastings Sampling 
+\end{itemize}
+
+
+\noindent The only prerequisite is Math 241 or equivalent. You should be familiar with the following:
+
+\begin{itemize}
+\itemsep -0.0em 
+\item Basic Set Theory
+\item Counting Methods | permutations and combinations
+\item Basic Probability Theory | axioms, conditional probability, in/dependence
+\item Modeling with Discrete Random Variables: Bernoulli, Hypergeometric, Binomial, Pois-
+son, Geometric, Negative Binomial, Uniform Discrete and others
+\item Expectation and Variance
+\item Modeling with Continuous Random Variables: Exponential, Uniform and Normal
+\item Frequentist Confidence Intervals and Hypothesis Testing for one-sample proportions
+\end{itemize}
+
+\noindent We will review the above \textit{throughout the semester} when needed and we will do so rapidly. \\
+
+\textbf{This is not your typical mathematics course.} This course develops ideas and concepts for helping to make decisions based on randomness and we will do lots of modeling of real-world situations. The course does not dwell on theory nor details of computation but will make use of computation especially using the \texttt{R} statistical language.
+
+\section*{Course Materials}
+
+\paragraph{Textbook:} Introduction to Bayesian Statistics by William M. Bolstad First Edition. It can be purchased used on \href{http://www.amazon.com/gp/offer-listing/0471270202/ref=sr_1_2_twi_1_har_olp?ie=UTF8&qid=1433515305&sr=8-2&keywords=introduction+to+bayesian+statistics+bolstad}{Amazon}. This is \textit{recommended}. It is a way to get ``another take'' on the material. However, most of the material in the class comes from the lecture notes.
+
+\paragraph{Popular Book:} We will also be reading the non-fiction novel \qu{The Theory that Would not Die: How Bayes' Rule Cracked the Enigma Code, Hunted Down Russian Submarines, and Emerged Triumphant from Two Centuries of Controversy} by Sharon Bertsch McGrayne which can also be purchased on \href{http://www.amazon.com/Theory-That-Would-Not-Die/dp/0300188226/ref=sr_1_1?ie=UTF8&qid=1454261896&sr=8-1&keywords=The+Theory+that+Would+not+Die}{Amazon}. This is \textit{required} --- you will have homework questions directly from this book.
+
+\paragraph{Computer Software:} We will also be using \texttt{R} which is a free, open source statistical programming language and console. You can download it from: \url{http://cran.mirrors.hoobly.com/}. I do not expect you to do \textit{any} programming. I will be giving you \texttt{R} code to run and expect you to interpret the results based on concepts explained during the course.
+
+\paragraph{Calculator:} You can use a TI-84, 85, 89 or any calculator which you wish. I strongly suggest you use \href{http://www.wolframalpha.com/}{Wolfram Alpha} and its smartphone app.
+
+\input{../../syllabi/_the650section}
+
+\input{../../syllabi/_announcements_on_slack}
+
+\input{../../syllabi/_use_of_slack}
+
+\input{../../syllabi/_standard_class_meetings}
+
+I am \inred{canceling} Monday, May 17 (the last meeting) due to a Jewish holiday. This meeting would have been a review session for the final exam. We will decide when to have this session during finals week that fits the majority's schedule.
+
+\input{../../syllabi/_zoom_policies}
+
+\input{_lecture_schedule}
+
+\input{../../syllabi/_lecture_upload}
+
+\section*{Homework}
+
+\input{../../syllabi/_theory_hws_text}
+
+\input{../../syllabi/_theory_hws_submission_text}
+\input{../../syllabi/_philosophy_hws}
+
+\input{../../syllabi/_time_spent_hws}
+
+\input{../../syllabi/_late_hw_policy}
+
+\input{../../syllabi/_latex_hw_bonus_policy}
+
+\input{../../syllabi/_hw_ec_policy}
+
+\input{../../syllabi/_hw_0}
+
+\section*{Examinations}
+
+\input{../../syllabi/_examination_text}
+
+\input{../../syllabi/_standard_exam_schedule}
+
+\subsection*{Exam Policies and Materials}
+
+\input{../../syllabi/_examination_policies}
+
+\input{../../syllabi/_standard_cheat_sheet_policy}
+
+
+\input{../../syllabi/_cheating_on_exams_and_missing_exams}
+\input{../../syllabi/_special_services}
+
+\input{../../syllabi/_class_participation}
+
+\input{../../syllabi/_zoom_attendance}
+
+\input{../../syllabi/_standard_grading_and_grading_policy}
+
+\input{../../syllabi/_advanced_course_grade_distribution}
+
+\input{../../syllabi/_grade_checking_on_gradesly}
+
+\input{../../syllabi/_auditing_policy}
+
+\end{document}
