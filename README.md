@@ -49,11 +49,11 @@ My lectures can be listened to as youtube tracks and lecture notes are also scan
 
 ## Exams
 
-* Midterm I is Thurs, Feb 27 (on zoom)
+* Midterm I is Wednesday, Mar 3 (on zoom)
 
-* Midterm II is Tues, Apr 21 (on Zoom)
+* Midterm II is Wednesday, Apr 21 (on Zoom)
 
-* Final is Thurs, May 21 8:30AM-10:30AM (on zoom)
+* Final is TBD (on zoom)
 
 ## Practice Exams
 
