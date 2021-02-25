@@ -88,12 +88,13 @@ NAME: \line(1,0){380}
 
 \intermediatesubproblem{Third time is a charn. Use the result from (e) as the prior distribution now. Using this prior, calculate the posterior for only $x_3 = 1$ (we are ignoring $x_1$ and $x_2$ explicitly since they're implicitly factored into the prior). Your answer should match the posterior from class (probability 0.53 for $\theta = 0.75$ and probability 0.47 for $\theta=0.5$) where we considered all $x_1, x_2, x_3$ in one shot together.}\spc{4}
 
-\hardsubproblem{[MA] Bayesian inference can be thought of as \qu{begin with prior, see one data point, update distribution of $\theta$, if you see another data point, use that updated distribution as prior to then compute a second updated distributed, etc. etc.} Via induction, prove this idea under the case where $\mathcal{F}$ is a general $\iid$ rv model. The base case is done (it's Bayes rule for $X_1$ and $\theta$). Then assume the theorem for $n-1$ and prove the inductive step:
+\hardsubproblem{[MA] Bayesian inference can be thought of as \qu{begin with prior, see one data point, update distribution of $\theta$, if you see another data point, use that updated distribution as prior to then compute a second updated distributed, etc. etc.} Prove this idea under the case where $\mathcal{F}$ is a general $\iid$ rv model. This amounts to proving for any $n$ that
 
 \beqn
-\cprob{\theta}{\Xoneton} = \frac{\cprob{X_n}{\theta}\overbrace{\cprob{\theta}{X_1, \ldots, X_{n-1}}}^{\substack{\text{this prior is assumed} \\ \text{to be the posterior  for the} \\ \text{previous $n-1$ data points}}}}{\prob{X_1, \ldots, X_{n-1}}}
+\cprob{\theta}{X_n} = \frac{\cprob{X_n}{\theta}\overbrace{\cprob{\theta}{X_1, \ldots, X_{n-1}}}^{\substack{\text{this prior is assumed} \\ \text{to be the posterior  for the} \\ \text{previous $n-1$ data points}}}}{\prob{X_{n}}}
 \eeqn
-~}\spc{12}
+
+The hard part of this is understanding what the denominator means in this context.}\spc{12}
 \end{enumerate}
 
 

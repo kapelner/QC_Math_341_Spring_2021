@@ -23,10 +23,10 @@ My lectures can be listened to as youtube tracks and lecture notes are also scan
 * Lecture 11 [(audio)](https://youtu.be/Qj-Q3vehOrg) [(Ah Yong Shin)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec11shin.pdf) [(Junhao Du)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec11du.pdf) [(Christella Nissanthan)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec11nissanthan.pdf)
 * Lecture 10 [(audio)](https://youtu.be/ogjjHMI5e5A) [(Ah Yong Shin)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec10shin.pdf) [(Adriana Sham)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec10Sham.pdf) [(Junhao Du)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec10du.pdf) [(Christella Nissanthan)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec10nissanthan.pdf)
 * Lecture 9 [(audio)](https://youtu.be/xb1aKYcZ24g) [(Ah Yong Shin)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec09shin.pdf) [(Adriana Sham)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec09Sham.pdf) [(Junhao Du)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec09du.pdf) [(Christella Nissanthan)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec09nissanthan.pdf)
- * Lecture 8 [(audio)](https://youtu.be/CWv2i1LtmoY) [(Junhao Du)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec08du.pdf) [(Antoinette Hemlall)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec08hemlall.pdf) [(Christella Nissanthan)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec08nissanthan.pdf) [(Shakif Shadman)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec08shadman.pdf) [(Rameasa Arna)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec08arna.pdf)
-* Lecture 7 [(audio)](https://youtu.be/lwY4UA7jch4) [(Junhao Du)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec07du.pdf) [(Antoinette Hemlall)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec07hemlall.pdf) [(Christella Nissanthan)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec07nissanthan.pdf) [(Shakif Shadman)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec07shadman.pdf) [(Rameasa Arna)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec07arna.pdf) --> 
+ * Lecture 8 [(audio)](https://youtu.be/CWv2i1LtmoY) [(Junhao Du)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec08du.pdf) [(Antoinette Hemlall)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec08hemlall.pdf) [(Christella Nissanthan)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec08nissanthan.pdf) [(Shakif Shadman)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec08shadman.pdf) [(Rameasa Arna)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec08arna.pdf) --> 
+* Lecture 7 video on slack [(Prof)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec07kap.pdf)
 * Lecture 6 video on slack [(Prof)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec06kap.pdf)
-* Lecture 5 video on slack [(Prof)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec05kap.pdf) [(Antonio DAlessandro)] (https://github.com/adalessandro36/QC_Math_341_Spring_2021/blob/main/lectures/lec05dalessandro.pdf) [(Kennly Weerasinghe)](https://github.com/wskennly/QC_Math_341_Spring_2021/blob/main/lectures/lec05weerasinghe.pdf)
+* Lecture 5 video on slack [(Prof)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec05kap.pdf) [(Antonio DAlessandro)](https://github.com/adalessandro36/QC_Math_341_Spring_2021/blob/main/lectures/lec05dalessandro.pdf) [(Kennly Weerasinghe)](https://github.com/wskennly/QC_Math_341_Spring_2021/blob/main/lectures/lec05weerasinghe.pdf)
 * Lecture 4 video on slack [(Prof)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec04kap.pdf) [(Kennly Weerasinghe)](https://github.com/wskennly/QC_Math_341_Spring_2021/blob/main/lectures/lec04weerasinghe.pdf)
 * Lecture 3 video on slack [(Prof)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec03kap.pdf) [(Amir ElTabakh)](https://github.com/sfnxboy/QC_Math_341_Spring_2021/blob/main/lectures/lec03ElTabakh.pdf) [(Kennly Weerasinghe)](https://github.com/wskennly/QC_Math_341_Spring_2021/blob/main/lectures/lec03weerasinghe.pdf)
 * Lecture 2 video on slack [(Prof)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec02kap.pdf) [(Amir ElTabakh)](https://github.com/sfnxboy/QC_Math_341_Spring_2021/blob/main/lectures/lec02ElTabakh.pdf)
@@ -85,14 +85,14 @@ My lectures can be listened to as youtube tracks and lecture notes are also scan
 
 I *want* you to come to office hours! My office hours are:
 
-Time: Tues/Thurs 11:00-11:30AM\
-Time: Friday, 11-11:30AM\
-Location: on Zoom\
+Time: Mon/Wed 4:30-5PM\
+Time: Friday, 11:05-11:30AM\
+Location: on Zoom
 
 In addition, Abhinav Patil, the course TA, will hold office hours as well:
 
 Time: TBA (as it will be before assignments are due)\
-Location: on Zoom\
+Location: on Zoom
 
 ## Grades and Class Standing
 
