@@ -40,8 +40,8 @@ My lectures can be listened to as youtube tracks and lecture notes are also scan
 * Homework 7 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw07/hw07.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw07/hw07.pdf) (due 5/8)
 * Homework 6 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw06/hw06.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw06/hw06.pdf) (due 4/20)
 * Homework 5 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw05/hw05.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw05/hw05.pdf) (due 3/29)
-* Homework 4 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw04/hw04.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw04/hw04.pdf) (due 3/16)
-* Homework 3 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw03/hw03.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw03/hw03.pdf) (due 2/28)-->
+* Homework 4 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw04/hw04.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw04/hw04.pdf) (due 3/16)-->
+* Homework 3 INCOMPLETE [(download)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw03/hw03.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw03/hw03.pdf) (due 3/21)
 * Homework 2 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw02/hw02.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw02/hw02.pdf) (due 2/28)
 * Homework 1 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw01/hw01.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw01/hw01.pdf) (due 2/12)
 * Homework 0 [(syllabus, page 6)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/syllabus/syllabus.pdf?raw=true) (due 1/31)
@@ -49,7 +49,7 @@ My lectures can be listened to as youtube tracks and lecture notes are also scan
 
 ## Exams
 
-* Midterm I is Wednesday, Mar 3 (on zoom)
+* Midterm I is Wednesday, Mar 10 (on zoom)
 
 * Midterm II is Wednesday, Apr 21 (on Zoom)
 
