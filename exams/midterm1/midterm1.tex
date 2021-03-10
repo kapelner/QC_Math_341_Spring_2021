@@ -1,0 +1,222 @@
+%\documentclass[12pt]{article}
+\documentclass[12pt,landscape]{article}
+
+
+\include{preamble}
+
+\newcommand{\instr}{\small Your answer will consist of a lowercase string (e.g. \texttt{aebgd}) where the order of the letters does not matter. \normalsize}
+
+\title{Math 341 / 650 Fall \the\year{} \\ Midterm Examination One}
+\author{Professor Adam Kapelner}
+
+\date{Wednesday, March 10, \the\year{}}
+
+\begin{document}
+\maketitle
+
+%\noindent Full Name \line(1,0){410}
+
+\thispagestyle{empty}
+
+\section*{Code of Academic Integrity}
+
+\footnotesize
+Since the college is an academic community, its fundamental purpose is the pursuit of knowledge. Essential to the success of this educational mission is a commitment to the principles of academic integrity. Every member of the college community is responsible for upholding the highest standards of honesty at all times. Students, as members of the community, are also responsible for adhering to the principles and spirit of the following Code of Academic Integrity.
+
+Activities that have the effect or intention of interfering with education, pursuit of knowledge, or fair evaluation of a student's performance are prohibited. Examples of such activities include but are not limited to the following definitions:
+
+\paragraph{Cheating} Using or attempting to use unauthorized assistance, material, or study aids in examinations or other academic work or preventing, or attempting to prevent, another from using authorized assistance, material, or study aids. Example: using an unauthorized cheat sheet in a quiz or exam, altering a graded exam and resubmitting it for a better grade, etc.
+\\
+
+\noindent By taking this exam, you acknowledge and agree to uphold this Code of Academic Integrity. \\
+
+%\begin{center}
+%\line(1,0){250} ~~~ \line(1,0){100}\\
+%~~~~~~~~~~~~~~~~~~~~~signature~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ date
+%\end{center}
+
+\normalsize
+
+\section*{Instructions}
+This exam is 70 minutes (variable time per question) and closed-book. You are allowed \textbf{one} page (front and back) of a \qu{cheat sheet}, blank scrap paper and a graphing calculator. Please read the questions carefully. No food is allowed, only drinks. %If the question reads \qu{compute,} this means the solution will be a number otherwise you can leave the answer in \textit{any} widely accepted mathematical notation which could be resolved to an exact or approximate number with the use of a computer. I advise you to skip problems marked \qu{[Extra Credit]} until you have finished the other questions on the exam, then loop back and plug in all the holes. I also advise you to use pencil. The exam is 100 points total plus extra credit. Partial credit will be granted for incomplete answers on most of the questions. \fbox{Box} in your final answers. Good luck!
+
+\pagebreak
+
+
+
+\problem\timedsection{7} These are conceptual questions about statistical inference in the Bayesian and Frequentist perspectives.
+
+\vspace{-0.2cm}\benum\truefalsesubquestionwithpoints{10} 
+
+\begin{enumerate}[(a)]
+\item The goal of point estimation is to find an approximation of the true value of $\theta$.
+\item The goal of theory testing is to find an approximation of the true value of $\theta$.
+\item The goal of statistical inference (in general) is to learn the true values of $\xoneton$.
+\item A parametric model $\mathcal{F}$ must be assumed to do statistical inference using the Frequentist perspective.
+\item A parametric model $\mathcal{F}$ must be assumed to do statistical inference using the Bayesian perspective.
+\item The data $\xoneton$ cannot be collected without assuming an $\mathcal{F}$.
+\item To compute the value of the likelihood for the data $\xoneton$, you must assume an $\mathcal{F}$.
+%\item The assumption of an $\mathcal{F}$ implies a set $\Theta$.
+\item In the Frequentist perspective, $\prob{\theta}$ is degenerate.
+\item In the Bayesian perspective, you can only do inference if the data is realized from $\iid$ random variables.
+\item In the Bayesian perspective, to compute the posterior, you must assume $\mathcal{F}$ and $\prob{\theta}$.
+\end{enumerate}
+\eenum\instr\pagebreak
+
+\problem\timedsection{9} Assume $\Xoneton \iid p(x; \theta)$, a discrete rv with support $\mathcal{X}$ and parameter space $\Theta$ and $p(\theta)$ is the PMF for a rv with support $\Theta$.
+
+\vspace{-0.2cm}\benum\truefalsesubquestionwithpoints{14} 
+
+\begin{enumerate}[(a)]
+\item $p(\xoneton; \theta) = p(x_1; \theta)\cdot p(x_2; \theta) \cdot \ldots \cdot p(x_n; \theta)$
+\item $\mathcal{L}(\theta; \xoneton) = \mathcal{L}(\theta; x_1) \cdot \mathcal{L}(\theta; x_2) \cdot \ldots \cdot \mathcal{L}(\theta; x_n)$
+\item $\ell(\theta; \xoneton) = \ell(\theta; x_1) \cdot \ell(\theta; x_2) \cdot \ldots \cdot \ell(\theta; x_n)$\item You can compute the maximum likelihood estimate by setting $\sum_{i=1}^n \displaystyle \frac{d\ell(\theta;x_i) }{d\theta} = 0$ and solving for $\theta$.
+\item You can compute the maximum likelihood estimate by setting $\sum_{i=1}^n \displaystyle \frac{d\ell(\theta;x_i) }{dx_i} = 0$ and solving for $\theta$.
+\item If $n$ is large, the maximum likelihood estimator is approximately normally distributed.
+\item $\sum_{x \in \mathcal{X}} p(x; \theta) = 1$.
+\item $\sum_{x \in \mathcal{X}} p(\theta; x) = 1$.
+\item $\sum_{x \in \mathcal{X}} p(x) = 1$.
+\item $\sum_{x \in \mathcal{X}} p(\theta) = 1$.
+\item $\sum_{\theta \in \Theta} p(x; \theta) = 1$.
+\item $\sum_{\theta \in \Theta} p(\theta; x) = 1$.
+\item $\sum_{\theta \in \Theta} p(x) = 1$.
+\item $\sum_{\theta \in \Theta} p(\theta) = 1$.
+\end{enumerate}
+\eenum\instr\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\problem\timedsection{9} Consider a rv $X$ with parameter space $\Theta$. Below is an illustration of the universe of all values of $x$ and $\theta$ drawn to-scale. The values inside the boxes are values of $x \in \support{X}$ and the values in the right margin are the values of $\theta \in \Theta$.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[width = 6.5in]{x_theta_space.pdf}
+\end{figure}
+
+\vspace{-0.2cm}\benum\truefalsesubquestionwithpoints{9} 
+
+\begin{enumerate}[(a)]
+\item $X$ is a discrete rv.
+\item $\Theta$ is discrete.
+\item If you add up the areas of all the boxes above, you will get 100\%.
+\item The prior was created using the principle of indifference.
+\item $\prob{X = 1, \theta = 1} > \prob{X = 1, \theta = 3}$.
+\item $\cprob{X = 1}{\theta = 1} > \cprob{X = 1}{\theta = 3}$.
+\item $\cprob{\theta = 1}{X = 3}$ can be computed by taking the yellow area and dividing by the sum of the yellow area, purple area and green area.
+\item $\cprob{\theta = 3}{X = 1}$ can be computed by taking the blue area and dividing by the sum of the blue area, red area and green area.
+\item $\cprob{\theta = 1}{X = 1}$ can be computed by taking the green area and dividing by the sum of the green area, purple area and yellow area.
+\end{enumerate}
+\eenum\instr\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\problem\timedsection{8} Assume $X_1, X_2, X_3, X_4 \iid \text{Bernoulli}(\theta)$ and $x_1 = 0, x_2 = 0, x_3 = 0, x_4 = 0$. For inference performed from the Bayesian perspective, assume Laplace's prior of indifference.
+
+\vspace{-0.2cm}\benum\truefalsesubquestionwithpoints{7} 
+
+\begin{enumerate}[(a)]
+\item The maximum likelihood estimate of $\theta$ is $\xbar$.
+\item The maximum likelihood estimate of $\theta$ is $\half$.
+\item The maximum likelihood estimate of $\theta$ is 0.
+\item $CI_{\theta, 90\%} = \braces{0}$.
+\item $CI_{\theta, 100\%} = \reals$.
+\item A frequentist hypothesis test of $H_a: \theta \neq 0.01$ at significance level 0.01 has a retainment region of  $\braces{0}$.
+\item A frequentist hypothesis test of $H_a: \theta \neq 0.01$ at significance level 0.01 will result in a rejection of $H_0$.
+\end{enumerate}
+\eenum\instr\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\problem\timedsection{11} Assume $X_1, X_2, X_3, X_4 \iid \text{Bernoulli}(\theta)$ and $x_1 = 0, x_2 = 0, x_3 = 0, x_4 = 0$. For inference performed from the Bayesian perspective, assume Laplace's prior of indifference.
+
+\vspace{-0.2cm}\benum\truefalsesubquestionwithpoints{16} 
+
+\begin{enumerate}[(a)]
+\item The posterior after seeing only $x_1$ is $\cprob{\theta}{x} = \betanot{1}{1}$.
+\item The posterior after seeing only $x_1$ is $\cprob{\theta}{x} = \betanot{1}{2}$.
+\item The full posterior after all $n=4$ observations is $\cprob{\theta}{x} = \betanot{1}{5}$.
+\item The full posterior after all $n=4$ observations  is $\cprob{\theta}{x} = \betanot{5}{1}$.
+\item The prior predictive distribution is $\prob{x} = \betanot{1}{1}$.
+\item The prior predictive distribution is $\prob{x} = \binomial{n}{\theta}$.
+\item The maximum a posteriori estimate of $\theta$ is 0.
+\item The maximum a posteriori estimate of $\theta$ is $>0$.
+\item The minimum mean squared error estimate of $\theta$ is 0.
+\item The minimum mean squared error estimate of $\theta$ is 1/5.
+\item The minimum mean squared error estimate of $\theta$ is 1/6.
+\item The prior expectation is 1/2.
+\item The prior median is 1/2.
+\item The only prior mode is 1/2.
+\item The minimum mean squared error estimator of $\theta$ can be written as $\displaystyle\frac{2}{3}\,\thetahatmle$ + $\displaystyle\frac{1}{3}\,\expe{\theta}$.
+\item The $\thetahatmmse$ and $\thetahatmmae$ estimators for the value of $\theta$ do not have any shrinkage whatsoever.
+\end{enumerate}
+\eenum\instr\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\problem\timedsection{11} Assume $X_1, X_2, X_3, X_4 \iid \text{Bernoulli}(\theta)$ and $x_1 = 0, x_2 = 0, x_3 = 0, x_4 = 0$. For inference performed from the Bayesian perspective, assume Laplace's prior of indifference.
+
+\vspace{-0.2cm}\benum\truefalsesubquestionwithpoints{13} 
+
+\begin{enumerate}[(a)]
+\item $CR_{\theta, 90\%} = \bracks{\text{qbeta}(5\%, 1, 5), \text{qbeta}(95\%, 1, 5)}$
+\item $CR_{\theta, 90\%} = \bracks{0, \text{qbeta}(90\%, 1, 5)}$
+\item $CR_{\theta, 90\%} = \bracks{\text{qbeta}(10\%, 1, 5), 1}$
+\item One needs to declare the test's significance level in order to compute a Bayesian p-value
+\item When testing $H_a: \theta < 0.3$, the Bayesian p-value can be computed via pbeta(0.3, 1, 5).
+\item When testing $H_a: \theta < 0.3$, the Bayesian p-value can be computed via pbeta(0.7, 1, 5).
+\item When testing $H_a: \theta < 0.3$, the Bayesian p-value can be computed via 1 - pbeta(0.3, 1, 5).
+\item When testing $H_a: \theta < 0.3$, the Bayesian p-value can be computed via 1 - pbeta(0.7, 1, 5).
+\item When testing $H_a: \theta < 0.3$, the Bayesian p-value can be computed via $\int_{0.3}^1 \oneover{B(1,5)} (1-\theta)^4 d\theta$.
+\item When testing $H_a: \theta < 0.3$, the Bayesian p-value can be computed via $\int_0^{0.3} \oneover{B(1,5)} (1-\theta)^4 d\theta$.
+\item When testing $H_a: \theta < 0.3$, the Bayesian p-value can be computed via $\int_0^1 \oneover{B(1,5)} (1-\theta)^4 d\theta$.
+\item When testing $H_a: \theta \neq 0.3$, the Bayesian p-value is zero.
+\item When testing $H_a: \theta \notin [0.3 \pm \delta]$, the Bayesian p-value is zero for all $\delta > 0$.
+\end{enumerate}
+\eenum\instr\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\problem\timedsection{15} This question is independet of those that came previously. Assuming a parametric model of the binomial with fixed $n$ and a beta prior, the posterior is plotted below:
+
+%RES = 1000
+%x = seq(0, 1, length.out = RES)
+%
+%alpha = 1
+%beta = 10
+%pacman::p_load(ggplot2, latex2exp)
+%ggplot(data.frame(x = x, y = dbeta(x, alpha, beta))) + 
+%  geom_area(aes(x = x, y = y), fill = "red", color = "black", alpha = 0.3) +
+%  xlab(TeX("$\\theta$")) +
+%  ylab(TeX("$P(\\theta | x)$"))
+%
+%qbeta(0.5, alpha, beta)
+%1 - pbeta(0.3, alpha, beta)
+
+%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
+
+\begin{figure}[htp]
+\centering
+\includegraphics[width = 6.5in]{beta.pdf}
+\end{figure}
+
+\vspace{-0.2cm}\benum\truefalsesubquestionwithpoints{11} 
+
+\begin{enumerate}[(a)]
+\item $HDR_{\theta, 90\%} = \bracks{a, b}$ where the values $a$ and $b$ satisfies $0 < a < b < 1$.
+\item $HDR_{\theta, 90\%} = \bracks{0, b}$ where the value $b$ satisfies $0 < b < 1$.
+%\item $HDR_{\theta, 90\%} = \bracks{a, 1}$ where the value $a$ satisfies  $0 < a < 1$.
+\item If the Haldane prior was chosen, then we can be certain that $x > 0$ and $x < n$.
+\item If the Haldane prior was chosen, there is no shrinkage in $\thetahatmmse$.
+\item $\thetahatmap = \thetahatmmae$.
+\item $\thetahatmmae = \thetahatmmse$.
+\item $\thetahatmmae = 1 - (1/2)^{1/10}$.
+\item $\thetahatmmae = 0.5$.
+\item When testing $H_a: \theta < 0.3$, the Bayesian p-value is 0.0282 to the nearest three significant digits.
+\item When testing $H_a: \theta < 0.3$, the Bayesian p-value is 0.282 to the nearest three significant digits.
+\end{enumerate}
+\eenum\instr\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
+

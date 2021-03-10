@@ -51,7 +51,7 @@ My lectures can be listened to as youtube tracks and lecture notes are also scan
 
 ## Exams
 
-* Midterm I is Wednesday, Mar 10 (on zoom)
+* Midterm I is Wednesday, Mar 10 (on zoom) [(exam)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/exams/midterm1/midterm1.pdf) [(solutions)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/exams/midterm1/midterm1_solutions.pdf)
 
 * Midterm II is Wednesday, Apr 21 (on Zoom)
 
