@@ -1,12 +1,12 @@
 # MATH 341 Bayesian Modeling Spring 2021
 
-This is the course homepage for Math 341 (and Masters level 650.3-02) at Queens College, City University of New York taught by Professor Adam Kapelner. The course syllabus can be found [here](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/syllabus/syllabus.pdf). We are now using [slack](https://qcmath341.slack.com/) for class discussions and vidoes.
+This is the course homepage for Math 341 (and Masters level 650.3-02) at Queens College, City University of New York taught by Professor Adam Kapelner. The course syllabus can be found [here](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/syllabus/syllabus.pdf). We are now using [slack](https://slack.com/) for class discussions and videos (see syllabus for link).
 
 ## Lectures
 
 My lectures can be listened to as youtube tracks and lecture notes are also scanned in as PDF files contributed by students and myself.
 
-* Lecture 11 video on slack [(Prof)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec10kap.pdf) 
+* Lecture 11 video on slack [(Prof)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec11kap.pdf) 
 * Lecture 10 video on slack [(Prof)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec10kap.pdf) [(Antonio DAlessandro)](https://github.com/adalessandro36/QC_Math_341_Spring_2021/blob/main/lectures/lec10dalessandro.pdf) [(Amir ElTabakh)](https://github.com/sfnxboy/QC_Math_341_Spring_2021/blob/main/lectures/341_Lec10.pdf)
 * Review 1 video on slack [(Prof)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/review1.pdf)
 * Lecture 9 video on slack [(Prof)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec09kap.pdf) [(Kennly Weerasinghe)](https://github.com/wskennly/QC_Math_341_Spring_2021/blob/main/lectures/lec09weerasinghe.pdf) [(Antonio DAlessandro)](https://github.com/adalessandro36/QC_Math_341_Spring_2021/blob/main/lectures/lec09dalessandro.pdf) [(Amir ElTabakh)](https://github.com/sfnxboy/QC_Math_341_Spring_2021/blob/main/lectures/341_Lec_9.pdf)
