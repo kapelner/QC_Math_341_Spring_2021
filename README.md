@@ -6,6 +6,7 @@ This is the course homepage for Math 341 (and Masters level 650.3-02) at Queens 
 
 My lectures can be listened to as youtube tracks and lecture notes are also scanned in as PDF files contributed by students and myself.
 
+* Lecture 12 video on slack [(Prof)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec12kap.pdf) 
 * Lecture 11 video on slack [(Prof)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec11kap.pdf) 
 * Lecture 10 video on slack [(Prof)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec10kap.pdf) [(Antonio DAlessandro)](https://github.com/adalessandro36/QC_Math_341_Spring_2021/blob/main/lectures/lec10dalessandro.pdf) [(Amir ElTabakh)](https://github.com/sfnxboy/QC_Math_341_Spring_2021/blob/main/lectures/341_Lec10.pdf)
 * Review 1 video on slack [(Prof)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/review1.pdf)
@@ -26,8 +27,8 @@ My lectures can be listened to as youtube tracks and lecture notes are also scan
 * Homework 8 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw08/hw08.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw08/hw08.pdf) (due 5/19)
 * Homework 7 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw07/hw07.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw07/hw07.pdf) (due 5/8)
 * Homework 6 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw06/hw06.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw06/hw06.pdf) (due 4/20)
-* Homework 5 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw05/hw05.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw05/hw05.pdf) (due 3/29)
-* Homework 4 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw04/hw04.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw04/hw04.pdf) (due 3/16)-->
+* Homework 5 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw05/hw05.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw05/hw05.pdf) (due 3/29)-->
+* Homework 4 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw04/hw04.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw04/hw04.pdf) (due 4/11)
 * Homework 3 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw03/hw03.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw03/hw03.pdf) (due 3/21)
 * Homework 2 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw02/hw02.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw02/hw02.pdf) (due 2/28)
 * Homework 1 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw01/hw01.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw01/hw01.pdf) (due 2/12)
