@@ -1,0 +1,345 @@
+\documentclass[12pt]{article}
+
+\include{preamble}
+
+\newtoggle{professormode}
+\toggletrue{professormode} %STUDENTS: DELETE or COMMENT this line
+
+
+
+\title{MATH 341 / 650.3 Spring \the\year~Homework \#5}
+
+\author{Professor Adam Kapelner} %STUDENTS: write your name here
+
+\iftoggle{professormode}{
+\date{Due by email, Sunday 11:59PM, April 18, \the\year \\ \vspace{0.5cm} \small (this document last updated \today ~at \currenttime)}
+}
+
+\renewcommand{\abstractname}{Instructions and Philosophy}
+
+\begin{document}
+\maketitle
+
+\vspace{-0.8cm}
+\iftoggle{professormode}{
+\begin{abstract}
+The path to success in this class is to do many problems. Unlike other courses, exclusively doing reading(s) will not help. Coming to lecture is akin to watching workout videos; thinking about and solving problems on your own is the actual ``working out.''  Feel free to \qu{work out} with others; \textbf{I want you to work on this in groups.}
+
+Reading is still \textit{required}. For this homework set, read about the Poisson-Gamma conjugate model, the extended negative binomial, the normal-normal conjugate model and read chapter 15 in McGrayne.
+
+The problems below are color coded: \ingreen{green} problems are considered \textit{easy} and marked \qu{[easy]}; \inorange{yellow} problems are considered \textit{intermediate} and marked \qu{[harder]}, \inred{red} problems are considered \textit{difficult} and marked \qu{[difficult]} and \inpurple{purple} problems are extra credit. The \textit{easy} problems are intended to be ``giveaways'' if you went to class. Do as much as you can of the others; I expect you to attempt the \textit{difficult} problems. 
+
+Problems marked \qu{[MA]} are for the masters students only (those enrolled in the 650.3 course). For those in 341, doing these questions will count as extra credit.
+
+This homework is worth 100 points but the point distribution will not be determined until after the due date. See syllabus for the policy on late homework.
+
+Up to 10 points are given as a bonus if the homework is typed using \LaTeX. Links to instaling \LaTeX~and program for compiling \LaTeX~is found on the syllabus. You are encouraged to use \url{overleaf.com}. If you are handing in homework this way, read the comments in the code; there are two lines to comment out and you should replace my name with yours and write your section. The easiest way to use overleaf is to copy the raw text from hwxx.tex and preamble.tex into two new overleaf tex files with the same name. If you are asked to make drawings, you can take a picture of your handwritten drawing and insert them as figures or leave space using the \qu{$\backslash$vspace} command and draw them in after printing or attach them stapled.
+
+The document is available with spaces for you to write your answers. If not using \LaTeX, print this document and write in your answers. I do not accept homeworks which are \textit{not} on this printout. Keep this first page printed for your records.
+
+\end{abstract}
+
+\thispagestyle{empty}
+\vspace{1cm}
+NAME: \line(1,0){380}
+\clearpage
+}
+
+
+\problem{These are questions about McGrayne's book, chapter 15.}
+
+\begin{enumerate}
+
+\easysubproblem{During the H-Bomb search in Spain and its coastal regions, RAdm. William Guest was busy sending ships here, there and everywhere even if the ships couldn't see the bottom of the ocean. How did Richardson use those useless searches?}\spc{2}
+
+\intermediatesubproblem{When the Navy was looking for the \textit{Scorpion} submarine, they used Monte Carlo methods (which we will see in class soon). How does the description of these methods by Richardson (p199) remind you of the \qu{sampling} techniques to approximate integrals we did in class?}\spc{4}
+
+\intermediatesubproblem{What is a Kalman filter? Read about it online and write a few descriptive sentences.}\spc{4}
+
+
+\intermediatesubproblem{Where do frequentist methods practically break down? (end of chapter 15)}\spc{4}
+
+\end{enumerate}
+
+\input{R_equations_table}
+\problem{We will ask some basic problems on the Gamma-Poisson conjugate model. Please review HW4 \#5 as this is a continuation of that problem. Feel free to answer using functions from Table 1.}
+
+\begin{enumerate}
+
+\intermediatesubproblem{Prove that the Poisson likelihood for $n$ observations, i.e. $\Xoneton ;\theta \iid \poisson{\theta}$, with a gamma prior yields a gamma posterior and find its parameters.}\spc{6}
+
+\easysubproblem{Now that you see the posterior, provide a pseudodata interpretation for both hyperparameters.}\spc{3}
+
+\intermediatesubproblem{Find the Bayesian point estimates as function of the data and prior's hyperparameters (i.e. $\thetahatmmse$, $\thetahatmae$ and $\thetahatmap$).}\spc{6}
+
+\intermediatesubproblem{If $\Xoneton ;\theta \iid \poisson{\theta}$, find $\thetahatmle$.}\spc{6}
+
+\intermediatesubproblem{Demonstrate that $\thetahatmmse$ is a shrinkage estimator and find $\rho$.}\spc{4}
+
+\intermediatesubproblem{Demonstrate that $\prob{\theta} \propto 1$ is improper.}\spc{2}
+
+\easysubproblem{[MA] Demonstrate that $\prob{\theta} \propto 1$ can be created by using an improper Gamma distribution (i.e. a Gamma distribution with parameters that are not technically in its parameter space and thereby does not admit a distribution function).}\spc{5}
+
+\intermediatesubproblem{Find Jeffrey's prior for the Poisson likelihood model. Try to do it yourself.}\spc{8}
+
+\easysubproblem{What is the equivalent of the Haldane prior in the Binomial likelihood model for the Poisson likelihood model? Use an interpretation of pseudocounts to explain.}\spc{4}
+
+\hardsubproblem{If $\prob{\theta} = \gammanot{\alpha}{\beta}$ where $\alpha \in \naturals$, prove that prior predictive distribution is $\prob{X} = \negbin{r}{p} := \binom{x + r - 1}{r - 1}(1-p)^{x-r}p^r$ where $p = \beta / (\beta + 1)$ and $r = \alpha$. This is a little bit different than that posterior predictive distribution derivation we did in class but mostly the same.}\spc{12}
+
+%\intermediatesubproblem{If $\alpha \notin \naturals$, create an \qu{extended negative binomial} r.v. and find its PMF. You can copy from Wikipedia.}\spc{3}
+
+
+\intermediatesubproblem{Why is the extended negative binomial r.v. also known as the gamma-Poisson mixture distribution? Why is it also called the \qu{overdispersed Poisson}?}\spc{2}
+
+
+
+\intermediatesubproblem{If you observe $0,3,2,4,2,6,1,0,5$, give a 90\% CR for $\theta$. Pick an principled objective (uninformative) prior.}\spc{5}
+
+\intermediatesubproblem{Using the data and the prior from (l), test if $\theta < 2$.}\spc{2}
+
+\hardsubproblem{Using the data and the prior from (l), find the probability the next observation will be a 7. Leave in exact form using Table 1's notation.}\spc{5}
+
+\easysubproblem{Use the R calculator (if you don't have it on your computer, go to \url{rdrr.io}) to compute it to the nearest two significat digits.}\spc{1}
+
+\hardsubproblem{[MA] We talked about that the negative binomial is an \qu{overdispersed} Poisson. Show that this negative binomial converges to a Poisson as $n \rightarrow \infty$ by showing PMF convergence.}\spc{12}
+
+\extracreditsubproblem{[MA] Find the joint posterior predictive distribution for $m$ future observations. I couldn't find the answer to this myself nor compute the integral.}\spc{0}
+\end{enumerate}
+
+
+
+
+\problem{We now discuss the theory of the normal-normal conjugate model. Assume 
+
+\beqn
+\mathcal{F}: \Xoneton~|~\theta,\sigsq \iid \normnot{\theta}{\sigsq}
+\eeqn 
+
+\noindent and \qu{$X$}, is the usual shorthand for all $\Xoneton$ samples.}
+
+\begin{enumerate}
+
+\easysubproblem{Show that the kernel of the normal distribution is, $\prob{X_1~|~\theta,~\sigsq} \propto k(X_1~|~\theta,~\sigsq) = e^{ax} e^{-bx^2}$ and solve for the values of $a$ and $b$ as functions of $\theta$ and $\sigsq$.}\spc{3}
+
+\hardsubproblem{Assume $\prob{\theta} = \normnot{\mu_0}{\tausq}$. Using the result from (a), show that posterior distribution is normal. Try to do it yourself and only copy from the notes if you must.}\spc{10}
+
+
+\easysubproblem{Find the Bayesian point estimates as function of the data and prior's hyperparameters (i.e. $\thetahatmmse$, $\thetahatmae$ and $\thetahatmap$).}\spc{1}
+
+
+\intermediatesubproblem{On a previous homework we showed that if $\mathcal{F}: \Xoneton~|~\theta,\sigsq \iid \normnot{\theta}{\sigsq}$ then $\thetahatmle = \xbar$. Assuming this MLE, show that $\thetahatmmse$ is a shrinkage estimator and find $\rho$.}\spc{4}
+
+
+\intermediatesubproblem{Rederive the posterior distribution under Laplace's prior of indifference. This is easier than the exercise in (b) as there are less terms.}\spc{3}
+
+\easysubproblem{Assuming $\sigsq = 1.3$, Laplace's prior and a dataset of $n=10$ with values 0.48  0.39  1.29  1.02  1.55 -0.22  0.01 -0.52 -1.50  0.71, provide a Bayesian point estimate.}\spc{1}
+
+\easysubproblem{Assuming the prior, $\sigsq$ and the dataset from (f), provide a 95\% CR for $\theta$.}\spc{1}
+
+\easysubproblem{Assuming the prior, $\sigsq$ and the dataset from (f), provide notation that calculates the $p$ value for a test of $\theta > 1$.}\spc{2}
+
+\intermediatesubproblem{Rederive Jeffrey's prior. Is it proper?}\spc{5}
+
+\intermediatesubproblem{Now let $\tau^2 := \sigsq / n_0$ which is a reparameterization from $\tau^2$ to $n_0$. Substitute this change into the posterior distribution from (b) to derive the posterior distribution under this reparemterization.}\spc{3}
+
+\easysubproblem{Provide pseudocount interpretations of $\mu_0$ and $n_0$.}\spc{2}
+
+\easysubproblem{Using the pseudocount interpretations of $\mu_0$ and $n_0$, what is Haldane's prior of ignorance? Is it proper?}\spc{2}
+
+
+\easysubproblem{If the prior is $\prob{\theta} = \normnot{\mu_0}{\sigsq / n_0}$, write the integral that will compute the posterior predictive distribution $\cprob{X_*}{X, \sigsq}$ when $n_*=1$.}\spc{20}
+
+\hardsubproblem{Compute the posterior predictive distribution $\cprob{X_*}{X, \sigsq}$ when $n_*=1$ using the integral from (m). Try to do it yourself and if you get stuck, look in the notes. Note the change of parameterization from the notes!}\spc{20}
+
+\end{enumerate}
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\problem{These are questions about McGrayne's book, chapters 11--14.}
+
+\begin{enumerate}
+
+\easysubproblem{Did Savage like Shlaifer? Yes / No and why?}\spc{3}
+
+\easysubproblem{How did Neyman-Pearson approach statistical decision theory? What is the weakness to this approach? (p145)}\spc{3}
+
+\easysubproblem{Who popularized \qu{probability trees} (and \qu{tree flipping}) similar to exercises we did in Math 241?}\spc{1}
+
+\easysubproblem{Where are Bayesian methods taught more widely than any other discipline in academia?}\spc{2}
+
+\easysubproblem{Despite the popularity of his Bayesian textbook on business decision theory, why didn't Schlaifer's Bayesianism catch on in the real world of business executives making decisions?}\spc{3}
+
+\easysubproblem{Why did the pollsters fail (big time) to predict Harry Truman's victory in the 1948 presidential election?}\spc{2}
+
+\easysubproblem{When does the diference between Bayesianism and Frequentism grow \qu{immense}?}\spc{3}
+
+\easysubproblem{How did Mosteller demonstrate that Madison wrote the 12 Federalist papers of unknown authorship?}\spc{3}
+
+\easysubproblem{Write a one paragraph biography of John Tukey.}\spc{4}
+
+\easysubproblem{Why did Alfred Kinsey's wife want to poison John Tukey?}\spc{2}
+
+\easysubproblem{Tukey helped NBC with polling predictions for the presidential campaign. What was NBC's polling algorithm based on?}\spc{2}
+
+\easysubproblem{Why is \qu{objectivity an heirloom ... and ... a fallacy?}}\spc{2}
+
+\easysubproblem{Why do you think Tukey called Bayes Rule by the name \qu{borrowing strength?}}\spc{2}
+
+\easysubproblem{Why is it that we don't know a lot of Bayes Rule's modern history?}\spc{2}
+
+\easysubproblem{Generally speaking, how does Nate Silver predict elections?}\spc{2}
+
+\easysubproblem{How many Bayesians of import were there in 1979?}\spc{1}
+
+\easysubproblem{What advice did Chernoff give to Susan Holmes? (Note: Susan Holmes was my undergraduate advisor).}\spc{3}
+
+\easysubproblem{How did Rasmussen's team estimate the probability of a nuclear plant core meltdown?}\spc{4}
+
+\easysubproblem{How did the Three Mile Island accident vindicate Rasmussen's committee report?}\spc{6}
+
+
+\end{enumerate}
+
+
+%\input{R_equations_table}
+
+
+\problem{We will now have lots of examples finding kernels from common distributions. Some of these questions are silly, but they will force you to think hard about what the kernel is under different situations. And... they're fun! Probabilistic pyromania!}
+
+\begin{enumerate}
+
+\easysubproblem{What is the kernel of $X~|~\theta,~n \sim \binomial{n}{\theta}$?}\spc{3}
+
+\hardsubproblem{What is the kernel of $X, n~|~\theta \sim \binomial{n}{\theta}$? Be careful...}\spc{3}
+
+
+\easysubproblem{What is the kernel of $X~|~\alpha,~\beta \sim \betabinomial{n}{\alpha}{\beta}$?}\spc{3}
+
+\easysubproblem{What is the kernel of $X~|~\theta \sim \poisson{\theta} := \frac{e^{-\theta}\theta^x}{x!}$?}\spc{3}
+
+\hardsubproblem{What is the kernel of $\theta~|~X \sim \poisson{\theta}$? Be careful...}\spc{3}
+
+\easysubproblem{What is the kernel of $X~|~\alpha,~\beta \sim \stdbetanot$?}\spc{4}
+
+\easysubproblem{What is the kernel of $X~|~\theta \sim \exponential{\theta} := \theta e^{-\theta x}$? This is the exponential distribution.}\spc{2}
+
+\easysubproblem{What is the kernel of $X~|~\theta,~\sigsq \sim \normnot{\theta}{\sigsq}$?}\spc{3}
+
+\hardsubproblem{What is the kernel of $\theta,~\sigsq~|~X \sim \normnot{\theta}{\sigsq}$? Be careful...}\spc{3}
+
+
+\easysubproblem{What is the kernel of $X~|~k \sim \chisq{k} := {\displaystyle {\frac {1}{2^{k/2}\Gamma (k/2)}}\;x^{k/2-1}e^{-x/2}\;}$, the chi-squared distribution with $k$ degrees of freedom?}\spc{4}
+
+\intermediatesubproblem{What is the kernel of 
+
+\beqn
+X~|~N,~\theta,~n \sim \hypergeometric{N}{\theta}{n} := {{{ \theta \choose x} {{N-\theta} \choose {n-x}}}\over {N \choose n}}
+\eeqn
+
+where $N$ is the number of total balls in the bag, $\theta$ is the number of success balls in the bag and $n$ is the number drawn out of the bag?}\spc{5}
+
+\intermediatesubproblem{[MA] If $X \sim F_{k_1, k_2}$, Snecedor's F-distribution, what is its kernel?}\spc{4}
+
+\hardsubproblem{[MA] If $X~|~\theta,~\sigsq \sim \normnot{\theta}{\sigsq}$ and $\theta~|~\mu_0,~\tausq \sim \normnot{\mu_0}{\tausq}$, what is the kernel of $\theta~|~X,~\sigsq,~\mu_0,~\tausq$?}\spc{6}
+
+\end{enumerate}
+
+
+\problem{These are questions about other vague priors: improper priors and Jeffreys priors.}
+
+\begin{enumerate}
+
+\easysubproblem{What is an improper prior?}\spc{2}
+
+\intermediatesubproblem{Is $\theta \sim \betanot{100}{0}$ improper? Yes / no and provide a proof.}\spc{4}
+
+\easysubproblem{When are improper priors \qu{legal}?}\spc{2}
+
+\easysubproblem{When are improper priors \qu{illegal}?}\spc{2}
+
+\hardsubproblem{What does $I(\theta)$ tell you about the random variable with respect to its parameter $\theta$?}\spc{5}
+
+\intermediatesubproblem{If I compute a posterior on the $\theta$ scale and then measure the parameter on another scale, will I (generally) get the same posterior probability? Yes/no explain.}\spc{3}
+
+
+\easysubproblem{What is the Jeffrey's prior for $\theta$ under the binomial likelihood? Your answer must be a distribution.}\spc{3}
+
+\hardsubproblem{What is the Jeffrey's prior for $\theta = t^{-1}(r) = \frac{e^r}{1 + e^r}$ (i.e. the log-odds reparameterization) under the binomial likelihood?}\spc{15}
+
+
+\hardsubproblem{Explain the advantage of Jeffrey's prior in words. Feel free to use Google.}\spc{6}
+
+\hardsubproblem{[MA] Prove Jeffrey's invariance principle i.e. prove that the Jeffrey's prior makes your prior probability immune to transformations. Use the second proof from class.}\spc{14}
+
+\end{enumerate}
+
+
+\problem{This question is about estimation of \qu{true career batting averages} in baseball.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[width=3.8in]{baseball.jpg}
+\end{figure}
+
+\noindent Every hitter's \emph{sample} batting average (BA) is defined as:
+
+\beqn
+BA := \frac{\text{sample \# of hits}}{\text{sample \# of at bats}}
+\eeqn
+
+In this problem we care about estimating a hitter's \emph{true} career batting average which we call $\theta$. Each player has a different $\theta$ but we focus in this problem on one specific player. In order to estimate the player's true batting average, we make use of the sample batting average as defined above (with Bayesian modifications, of course). 
+
+We assume that each at bat (for any player) are conditionally $\iid$ based on the players' true batting average, $\theta$. So if a player has $n$ at bats, then each successful hit in each at bat can be modeled via $X_1~|~\theta, ~X_2~|~\theta, \ldots, ~X_n~|~\theta \iid \bernoulli{\theta}$ i.e. the standard assumption and thus the total number of hits out of $n$ at bats is binomial.
+
+Looking at the entire dataset for 6,061 batters who had 100 or more at bats, I fit the beta distribution PDF to the sample batting averages using the maximum likelihood approach and I'm estimating $\alpha = 42.3$ and $\beta = 127.7$. Consider building a prior from this estimate as $\theta \sim \betanot{42.3}{127.7}$ }
+
+\begin{enumerate}
+
+\easysubproblem{Is the prior \qu{conjugate}? Yes / No.}\spc{-0.5}
+\easysubproblem{Is this prior \qu{indifferent}? Yes / No.}\spc{-0.5}
+\easysubproblem{Is this prior \qu{objective}? Yes / No.}\spc{-0.5}
+\easysubproblem{Is this prior \qu{informative}? Yes / No.}\spc{-0.5}
+
+\easysubproblem{Using prior data to build the prior is called...}\spc{-0.5}
+
+\easysubproblem{This prior has the information contained in how many observations?}\spc{-0.5}
+
+\easysubproblem{We now observe four at bats for a new player and there were no hits. Find the $\thetahatmmse$.}\spc{0.5}
+
+\easysubproblem{Why was your answer so far away from $\thetahatmle = 0$? What is the shrinkage proportion in this estimation?} \spc{2}
+
+\intermediatesubproblem{Why is it a good idea to shrink so hard here? Why do some consider this to be one of the beauties of Bayesian modeling?} \spc{6}
+
+\hardsubproblem{Write an exact expression for the batter getting 14 or more hits on the next 20 at bats. You can leave your answer in terms of the beta function. Do not compute explicitly.} \spc{3}
+
+\intermediatesubproblem{How many hits is the batter expected to get in the next 20 at bats?} \spc{3}
+
+\end{enumerate}
+
+\problem{We will ask some basic problems on the Gamma-Poisson conjugate model.}
+
+\begin{enumerate}
+
+
+\easysubproblem{Write the PDF of $\theta \sim \text{Gamma}(\alpha, \beta)$ which is the gamma distribution with the standard parameterization and notated with the hyperparameters we used in class.}\spc{0.5}
+
+\easysubproblem{What is the support and parameter space?}\spc{0.5}
+
+\easysubproblem{What is the expectation and standard error and mode?}\spc{1}
+
+
+\easysubproblem{Draw four different pictures of different hyperparameter combinations to demonstrate this model's flexibility}\spc{11}
+
+
+\intermediatesubproblem{Prove that the Poisson likelihood for $n=1$ with a gamma prior yields a gamma posterior and find its parameters.}\spc{4}
+
+
+\end{enumerate}
+
+
+
+\end{document}
