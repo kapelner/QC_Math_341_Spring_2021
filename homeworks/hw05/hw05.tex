@@ -84,7 +84,7 @@ NAME: \line(1,0){380}
 
 \easysubproblem{What is the equivalent of the Haldane prior in the Binomial likelihood model for the Poisson likelihood model? Use an interpretation of pseudocounts to explain.}\spc{4}
 
-\hardsubproblem{If $\prob{\theta} = \gammanot{\alpha}{\beta}$ where $\alpha \in \naturals$, prove that prior predictive distribution is $\prob{X} = \negbin{r}{p} := \binom{x + r - 1}{r - 1}(1-p)^{x-r}p^r$ where $p = \beta / (\beta + 1)$ and $r = \alpha$. This is a little bit different than that posterior predictive distribution derivation we did in class but mostly the same.}\spc{12}
+\hardsubproblem{If $\prob{\theta} = \gammanot{\alpha}{\beta}$ where $\alpha \in \naturals$, prove that prior predictive distribution is $\prob{X} = \negbin{r}{p} := \binom{x + r - 1}{r - 1}(1-p)^{x}p^r$ where $p = \beta / (\beta + 1)$ and $r = \alpha$. This is a little bit different than that posterior predictive distribution derivation we did in class but mostly the same.}\spc{12}
 
 %\intermediatesubproblem{If $\alpha \notin \naturals$, create an \qu{extended negative binomial} r.v. and find its PMF. You can copy from Wikipedia.}\spc{3}
 
@@ -93,7 +93,7 @@ NAME: \line(1,0){380}
 
 
 
-\intermediatesubproblem{If you observe $0,3,2,4,2,6,1,0,5$, give a 90\% CR for $\theta$. Pick an principled objective (uninformative) prior.}\spc{5}
+\intermediatesubproblem{If you observe $0,3,2,4,2,6,1,0,5$, give a 90\% CR for $\theta$. Pick a principled objective (uninformative) prior.}\spc{5}
 
 \intermediatesubproblem{Using the data and the prior from (l), test if $\theta < 2$.}\spc{2}
 
@@ -112,7 +112,7 @@ NAME: \line(1,0){380}
 \problem{We now discuss the theory of the normal-normal conjugate model. Assume 
 
 \beqn
-\mathcal{F}: \Xoneton~|~\theta,\sigsq \iid \normnot{\theta}{\sigsq}
+\mathcal{F}: \Xoneton~|~\theta,\sigsq \iid \normnot{\theta}{\sigsq} ~~~\text{and $\sigsq$ known}
 \eeqn 
 
 \noindent and \qu{$X$}, is the usual shorthand for all $\Xoneton$ samples.}
