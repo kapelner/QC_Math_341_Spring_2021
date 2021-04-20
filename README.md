@@ -65,7 +65,7 @@ My lectures can be listened to as youtube tracks and lecture notes are also scan
 [(practice exam 2019)](https://github.com/kapelner/QC_Math_341_Spring_2019/blob/master/exams/midterm2/midterm2.pdf) [(practice exam 2019 solutions)](https://github.com/kapelner/QC_Math_341_Spring_2019/blob/master/exams/midterm2/midterm2_solutions.pdf)\
 [(practice exam 2018)](https://github.com/kapelner/QC_Math_341_Spring_2018/blob/master/exams/midterm2/midterm2.pdf) [(practice exam 2018 solutions)](https://github.com/kapelner/QC_Math_341_Spring_2018/blob/master/exams/midterm2/midterm2_solutions.pdf) Omit 2d\
 [(practice exam 2017)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/exams/midterm2/midterm2.pdf) [(practice exam 2017 solutions)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/exams/midterm2/midterm2_solutions.pdf)\
-[(practice exam 2016)](https://github.com/kapelner/QC_Math_390.03-02_Spr_2016/blob/master/exams/midterm2/midterm2.pdf) [(practice exam 2016 solutions)](https://github.com/kapelner/QC_Math_390.03-02_Spr_2016/blob/master/exams/midterm2/midterm2_solutions.pdf) Omit problem 1e,f. Omit problem 2.
+[(practice exam 2016)](https://github.com/kapelner/QC_Math_390.03-02_Spr_2016/blob/master/exams/midterm2/midterm2.pdf) [(practice exam 2016 solutions)](https://github.com/kapelner/QC_Math_390.03-02_Spr_2016/blob/master/exams/midterm2/midterm2_solutions.pdf) Omit problem 1e,f. Omit problem 2. Omit 3j,k,l.
 
 * Final
 
@@ -73,7 +73,7 @@ My lectures can be listened to as youtube tracks and lecture notes are also scan
 [(practice exam 2019)](https://github.com/kapelner/QC_Math_341_Spring_2019/blob/master/exams/final/final.pdf) [(practice exam 2019 solutions)](https://github.com/kapelner/QC_Math_341_Spring_2019/blob/master/exams/final/final_solutions.pdf)\
 [(practice exam 2018)](https://github.com/kapelner/QC_Math_341_Spring_2018/blob/master/exams/final/final.pdf) [(practice exam 2018 solutions)](https://github.com/kapelner/QC_Math_341_Spring_2018/blob/master/exams/final/final_solutions.pdf)\
 [(practice exam 2017)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/exams/final/final.pdf) [(practice exam 2017 solutions)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/exams/final/final_solutions.pdf) Omit 2i, \
-[(practice exam 2016)](https://github.com/kapelner/QC_Math_390.03-02_Spr_2016/blob/master/exams/final/final.pdf) [(practice exam 2016 solutions)](https://github.com/kapelner/QC_Math_390.03-02_Spr_2016/blob/master/exams/final/final_solutions.pdf) Omit Problem 1i, 1j, 1k, 1l, all of 2.
+[(practice exam 2016)](https://github.com/kapelner/QC_Math_390.03-02_Spr_2016/blob/master/exams/final/final.pdf) [(practice exam 2016 solutions)](https://github.com/kapelner/QC_Math_390.03-02_Spr_2016/blob/master/exams/final/final_solutions.pdf) Omit Problem 1i, 1j, 1k, 1l, all of 2. Add 3j,k,l from 2016 Midterm 2.
 
 ## Office Hours
 
