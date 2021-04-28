@@ -1,0 +1,249 @@
+%\documentclass[12pt]{article}
+\documentclass[12pt,landscape]{article}
+
+
+\include{preamble}
+
+\newcommand{\instr}{\small Your answer will consist of a lowercase string (e.g. \texttt{aebgd}) where the order of the letters does not matter. \normalsize}
+
+\title{Math 341 / 650 Fall \the\year{} \\ Midterm Examination Two}
+\author{Professor Adam Kapelner}
+
+\date{Wednesday, April 28, \the\year{}}
+
+\begin{document}
+\maketitle
+
+%\noindent Full Name \line(1,0){410}
+
+\thispagestyle{empty}
+
+\section*{Code of Academic Integrity}
+
+\footnotesize
+Since the college is an academic community, its fundamental purpose is the pursuit of knowledge. Essential to the success of this educational mission is a commitment to the principles of academic integrity. Every member of the college community is responsible for upholding the highest standards of honesty at all times. Students, as members of the community, are also responsible for adhering to the principles and spirit of the following Code of Academic Integrity.
+
+Activities that have the effect or intention of interfering with education, pursuit of knowledge, or fair evaluation of a student's performance are prohibited. Examples of such activities include but are not limited to the following definitions:
+
+\paragraph{Cheating} Using or attempting to use unauthorized assistance, material, or study aids in examinations or other academic work or preventing, or attempting to prevent, another from using authorized assistance, material, or study aids. Example: using an unauthorized cheat sheet in a quiz or exam, altering a graded exam and resubmitting it for a better grade, etc.
+\\
+
+\noindent By taking this exam, you acknowledge and agree to uphold this Code of Academic Integrity. \\
+
+%\begin{center}
+%\line(1,0){250} ~~~ \line(1,0){100}\\
+%~~~~~~~~~~~~~~~~~~~~~signature~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ date
+%\end{center}
+
+\normalsize
+
+\section*{Instructions}
+This exam is 70 minutes (variable time per question) and closed-book. You are allowed \textbf{one} page (front and back) of a \qu{cheat sheet}, blank scrap paper and a graphing calculator. Please read the questions carefully. No food is allowed, only drinks. %If the question reads \qu{compute,} this means the solution will be a number otherwise you can leave the answer in \textit{any} widely accepted mathematical notation which could be resolved to an exact or approximate number with the use of a computer. I advise you to skip problems marked \qu{[Extra Credit]} until you have finished the other questions on the exam, then loop back and plug in all the holes. I also advise you to use pencil. The exam is 100 points total plus extra credit. Partial credit will be granted for incomplete answers on most of the questions. \fbox{Box} in your final answers. Good luck!
+
+\pagebreak
+
+%$\cprobsub{1}{X}{\theta} = \binomial{n}{\theta}$ with $n$ fixed, $\probsub{2}{\theta} = \betanot{\alpha}{\beta}$, $\cprobsub{3}{X}{\theta} = \poisson{\theta}$,  $\probsub{4}{\theta} = \gammanot{\alpha}{\beta}$, $\cprobsub{3}{X}{\theta} = \poisson{\theta}$
+
+
+\problem\timedsection{7} Let $\cprob{X}{\theta} \sim \poisson{\theta}$, $\prob{\theta} =\invgammanot{\alpha}{\beta}$ and $\alpha, \beta > 0$.
+
+\vspace{-0.2cm}\benum\truefalsesubquestionwithpoints{13} 
+
+\begin{enumerate}[(a)]
+\item $\prob{\theta}$ is the conjugate prior for the parametric model given by $\cprob{X}{\theta}$
+\item $\prob{\theta}$ has the same support as the parameter space of $\cprob{X}{\theta}$
+\item $\cprob{\theta}{X}$ is a mixture / compound distribution
+\item $\prob{X}$ is a mixture / compound distribution
+\item The kernel of $\cprob{\theta}{X}$ is $\theta^{x - \alpha - 1} e^{-(\theta + \beta / \theta)}$
+\item The kernel of $\cprob{\theta}{X}$ is $\theta^x / x!$
+\item The posterior is gamma-distributed
+\item The normalization constant of $\cprob{\theta}{X}$ is given by $\beta^\alpha / (x! \Gammaf{\alpha})$
+\item The posterior predictive distribution can be computed via $\int_0^\infty \cprob{X}{\theta} \prob{\theta} d\theta$
+\item The posterior predictive distribution rv will have higher variance than the Poisson rv
+\item The posterior predictive distribution rv will have one parameter: $\theta$
+\item The posterior predictive distribution rv will have two parameters: $\alpha, \beta$
+\item The posterior predictive distribution rv will have support $(0, \infty)$
+\end{enumerate}
+\eenum\instr\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\problem\timedsection{8} Let $\cprob{X}{\theta} \sim \poisson{\theta}$ and then consider the reparameterization of $\theta$ called $\phi := t(\theta) = \natlog{\theta}$ and $\theta = t^{-1}(\phi) = e^\phi$ so that $\cprob{X}{\phi} = e^{x \phi \displaystyle-e^\phi} / x!$
+
+%\beqn
+%\cprob{X}{\phi} = e^{-x \phi} e^{\displaystyle-e^\phi} / x!
+%\eeqn
+
+\vspace{-0.2cm}\benum\truefalsesubquestionwithpoints{8} 
+
+\begin{enumerate}[(a)]
+\item To compute the Jeffrey's prior, the only information necessary is the likelihood function of $\mathcal{F}$
+\item $\probsub{J}{\theta} = \gammanot{1/2}{0}$
+\item $\ell(\phi; x) = x \phi - e^\phi - \natlog{x!}$
+\item $\ell'(\phi; x) = x  - e^\phi$
+%\item $\ell''(\phi; x) = - e^\phi$
+\item $\probsub{J}{\phi} \propto e^{\phi}$
+\item $\probsub{J}{\phi} \propto e^{\phi / 2}$
+\item If you parameterize by $\theta$ and use $\probsub{J}{\theta}$ to derive the posterior, you will get the same point estimates $\thetahatmmse, \thetahatmmae, \thetahatmap$ if you parameterize by $\phi$ and use $\probsub{J}{\phi}$ to derive the posterior.
+\item $f_1(\phi) := \probsub{J}{\phi}$ can be derived from $f_2(\theta) := \probsub{J}{\theta}$ using the change of variables equation, $f_1(\phi) = f_2(t^{-1}(\theta)) \abss{\frac{d}{d\phi}[t^{-1}(\theta)]}$
+\end{enumerate}
+\eenum\instr\pagebreak
+
+%\problem\timedsection{7} Let $\cprob{X}{\theta} \sim \poisson{\theta}$ and let $\phi := t(\theta) = 1 / \theta$ so that $\cprob{X}{\phi} = \phi^{-x} e^\phi / x!$.
+%
+%\vspace{-0.2cm}\benum\truefalsesubquestionwithpoints{10} 
+%
+%\begin{enumerate}[(a)]
+%\item $\probsub{J}{\theta} = \gammanot{1/2}{0}$
+%\item $\ell(\phi; x) = -x \natlog{\phi} + \phi - \natlog{x!}$
+%\item $\ell'(\phi; x) = 1 - x \phi^{-1}$
+%%\item $\ell''(\phi; x) = x \phi^{-2}$
+%%\item $I(\phi; x) = -\phi^{-3}$
+%\item $\probsub{J}{\phi} = \gammanot{-2}{0}$
+%\end{enumerate}
+%\eenum\instr\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\problem\timedsection{13} We are looking to understand the annual risk of heart attacks in men with high cholesterol as defined by the mean number of annual heart attacks. In 2020, among $n = 20$ men with high cholesterol, one man had two heart attacks, four men had one heart attack and the other men had no heart attacks. An iid Poisson parametric model seems to be a reasonable choice for these annual heart attack events. We have absolutely no prior information so we are most comfortable employing a Haldane-type ignorance prior. All quantities below are rounded to the nearest two decimals.
+
+\vspace{-0.2cm}\benum\truefalsesubquestionwithpoints{14} 
+
+\begin{enumerate}[(a)]
+\item $\thetahatmle = 0.30$ 
+\item $\prob{\theta} = \gammanot{1}{0}$
+\item $\thetahatmmse = 0.35$ 
+\item Given quantities provided, you need a computing device to compute $\thetahatmmae$
+\item $\thetahatmmse = 0.30$ 
+\item $\thetahatmap = 0.35$ 
+\item $\thetahatmap = 0.30$ 
+\item Under this Haldane prior we chose, $\thetahatmmse$ will shrink towards $x_0 = 0$
+\item A 95\% credible region for $\theta$ can be constructed by computing [qgamma(0.025, 6, 20), qgamma(0.975, 6, 20)]
+\item To test the theory that high blood pressure induces higher heart attack risk than the average risk of 0.07, you can calculate pgamma(0.07, 6, 20) and compare it to your significance level (which is usually set to be 5\%)
+\item Using this data and prior, you can compute to the nearest two decimals the probability that a randomly selected man with high blood pressure having zero heart attacks in a year would be zero.
+\item Using this data and prior, it is possible to compute to the nearest two decimals the probability that a randomly selected man with high blood pressure having one heart attack in a year would be $\theta e^\theta$.
+\item Using this data and prior, it is possible to compute to the nearest two decimals the probability that a randomly selected man with high blood pressure having one heart attack in a year would be $(20 / 21)^7$.
+\item Using this data and prior, it is possible to compute to the nearest two decimals the probability that a randomly selected man with high blood pressure having one heart attack in a year would be $6 \times 20^6 / 21^7$.
+\end{enumerate}
+\eenum\instr\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\problem\timedsection{14} We are looking to understand IQ levels in adults that were exposed to a toxin in youth. We sample $n = 7$ adults exposed to the toxin and measure IQ's of 79,  91, 103,  87,  86,  91 and  75 and thus $\xbar = 87.43$. The normal iid model is a reasonable model as the population IQ metric has been demonstrated to be normally distributed. It is also known that the population variance of IQ scores is $\sigsq = 15^2$ since the scale is designed pegged to that value (so it seems reasonable to assume the value of $\sigsq$ is known in our setting). You have no strong prior belief on the IQ levels in these adults after being exposed to a toxin so you can employ any of the three principled objective priors we discussed found in the class lectures. All quantities are rounded to the nearest two decimals.
+
+%x = c(79,  91, 103,  87,  86,  91, 75)
+%mean(x)
+
+\vspace{-0.2cm}\benum\truefalsesubquestionwithpoints{13} 
+
+\begin{enumerate}[(a)]
+\item $\prob{\theta} = \normnot{0}{0} \propto 1$
+\item The kernel of the posterior can be expressed as $e^{a\theta - b\theta^2}$ where $a,b$ are functions of $\xoneton$, $\sigsq$ and fundamental constants (but not functions of $\theta$)
+\item $\thetahatmmse = 87.43$
+\item $\thetahatmap = \xbar$
+\item Given quantities provided, you need a computing device to compute $\thetahatmmae$
+\item A 98\% credible region can be constructed by computing [qnorm(0.01, $\xbar, \sqrt{15}$), qnorm(0.99, $\xbar, \sqrt{15}$)]
+\item A 98\% credible region can be constructed by computing [qnorm(0.01, $\xbar, \sqrt{15} / 7$), qnorm(0.99, $\xbar, \sqrt{15} / 7$)]
+\item The mean IQ in the overall population is pegged to be 100. To test the theory that this toxin exposure in youth results in a below-mean IQ, you can calculate pnorm(100, $\theta_p$, $\sigsq_p$) where $\theta_p$ is the posterior mean and $\sigsq_p$ is the posterior variance and compare it to your significance level (which is usually set to be 5\%)
+\item Under this prior we chose, $\thetahatmmse$ will shrink towards $x_0 = 100$, the true population mean.
+\item This prior we chose is equivalent to seeing $n_0 = 7$ pseudoobservations
+\item Using this data and prior, you can compute the probability that a randomly selected man (exposed to the toxin in youth) will have an adult IQ less than 100 is pnorm(100, 87.43, 4.14)
+\item A 95\% posterior predictive interval can be computed as [qnorm(0.025, $\theta_p$, $\sqrt{\sigsq + \sigsq_p}$), qnorm(0.975, $\theta_p$, $\sqrt{\sigsq + \sigsq_p}$)]
+\item A 95\% posterior predictive interval can be computed as \\ ~[qt.scaled(0.025, 7, $\theta_p$, $\sqrt{\sigsq + \sigsq_p}$), qt.scaled(0.975, 7, $\theta_p$, $\sqrt{\sigsq + \sigsq_p}$)]
+\end{enumerate}
+\eenum\instr\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\problem\timedsection{14} We are looking to understand annual financial returns of a mutual fund for the NYC teachers' retirement system. The fund is guaranteed to produce a mean return of 7.5\% over 40 years since inception but is allowed to vary its return year-year based on natural variation in the world economy. You unfortunately have only $n=3$  years of data to use: you see returns 18\%, -3\% and 4\%. Although it is probably not an appropriate parametric model for annual return, assume yearly returns are iid normal with known $\theta = 7.5\%$. For now, you have no strong prior belief on variance in these returns so you should employ the standard uninformative prior in this situation, the Jeffrey's prior. All quantities below are rounded to the nearest two digits.
+
+%x = c(79,  91, 103,  87,  86,  91, 75)
+%mean(x)
+
+\vspace{-0.2cm}\benum\truefalsesubquestionwithpoints{13} 
+
+\begin{enumerate}[(a)]
+\item $\prob{\theta} \propto 1$
+\item $\sigsqhatmle = 77.58$
+\item $\sigsqhatmap = 77.58$
+\item Given quantities provided, you need a computing device to compute $\sigsqhatmmae$
+\item $\cprob{\sigsq}{X, \theta} = \invgammanot{1.50}{116.38}$
+\item $\cprob{\sigsq}{X, \theta} = \invgammanot{1.50}{114.33}$
+\item $\cprob{\sigsq}{X, \theta} = \invgammanot{3.00}{232.75}$
+\item $\cprob{\sigsq}{X, \theta} = \invgammanot{0}{0}$
+\item $\cprob{\sigsq}{X, \theta} = k(\sigsq\,|\,X,\theta)$
+\item A 98\% credible region can be constructed by computing [qinvgamma(0.01, $n/2, ns^2 / 2$), qinvgamma(0.99, $n/2, ns^2 / 2$)] where $s^2 = \oneover{n-1}\sum_{i=1}^n (x_i - \xbar)^2$
+%\item The mean IQ in the overall population is pegged to be 100. To test the theory that this toxin exposure in youth results in a below-mean IQ, you can calculate pnorm(100, $\theta_p$, $\sigsq_p$) where $\theta_p$ is the posterior mean and $\sigsq_p$ is the posterior variance and compare it to the significance level which is usually set to be 5\%
+%\item Under this prior we chose, $\thetahatmmse$ will shrink towards $x_0 = 100$, the true population mean.
+%\item This prior we chose is equivalent to seeing $n_0 = 7$ pseudoobservations
+\item Using this data and prior, you can compute the probability that the variance of the returns is less than $5\%^2$ is pinvgamma($5\%^2, n/2, n\sigsqhatmle/2$)
+\item The probability that the annual return next year will be more than 10\% can be exactly computed via \\ 1 - pt.scaled($3, 10\%, 7.5\%, \sqrt{\sigsqhatmle}$)
+\item The probability that the annual return next year will be more than 10\% can be approximated accurately via computing 1 - pnorm($10\%, 7.5\%, \sqrt{\sigsqhatmle}$)
+\end{enumerate}
+\eenum\instr\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\problem\timedsection{14} \ingray{We are looking to understand annual financial returns of a mutual fund for the NYC teachers' retirement system. The fund is guaranteed to produce a mean return of 7.5\% over 40 years since inception but is allowed to vary its return year-year based on natural variation in the world economy. You unfortunately have only $n=3$  years of data to use: you see returns 18\%, -3\% and 4\%. Although it is probably not an appropriate parametric model for annual return, assume yearly returns are iid normal with known $\theta = 7.5\%$.} Since we only have $n=3$, inference for $\sigsq$ will be very inaccurate as $\var{\sigsq~|~X, \theta}$ from Problem 5 is too high to be useful. We wish to \qu{borrow estimation strength} by examining other past financial products that are similar to this NYC teachers' retirement system mutual fund. Using the data from other financial products, we fit the following distribution to their lifetime variances: $\cprob{\sigsq}{\theta} = \invgammanot{5.93}{18.17}$ and use this as our prior to perform our Bayesian statistical inference. \ingray{All quantities below are rounded to the nearest two digits.}
+
+%x = c(79,  91, 103,  87,  86,  91, 75)
+%mean(x)
+
+\vspace{-0.2cm}\benum\truefalsesubquestionwithpoints{13} 
+
+\begin{enumerate}[(a)]
+\item $\prob{\sigsq} \propto 1$
+\item This prior is informative 
+\item Using this prior, the inference would constitute an example of \qu{Empirical Bayes} in action
+\item This prior's strength is approximately equivalent to observing 12 annual returns of the NYC teachers' retirement system mutual fund that we are investigating
+\item To generate this prior, we looked at 12 similar past financial products
+\item Under this prior, you expect $\sigsq$ to be 3.69
+\item If you employ $\sigsqhatmmse$ for point estimation, your point estimate will be weighted more towards the prior's expectation than the maximum likelihood estimate from the data
+\item $\sigsqhatmle = 20.92$
+\item $\sigsqhatmmse = 20.92$
+\item We estimate that the variance of returns for the NYC teachers' retirement system mutual fund is now smaller than previously when we employed the Jeffrey's prior
+\item You need a computing device to compute $\sigsqhatmmae$
+\item $\cprob{X_*}{X, \theta} = T_{n+n_0}(\theta, \sigsqhatmmse)$
+%\item A 98\% credible region can be constructed by computing [qinvgamma(0.01, $n/2, ns^2 / 2$), qinvgamma(0.99, $n/2, ns^2 / 2$)] where $s^2 = \oneover{n-1}\sum_{i=1}^n (x_i - \xbar)^2$
+%\item Using this data and prior, you can compute the probability that the variance of the returns is less than $5\%^2$ is pinvgamma($5\%^2, n/2, n\sigsqhatmle/2$)
+\item The probability that the annual return next year will be more than 10\% can be exactly computed via \\ 1 - pt.scaled($3, 10\%, 7.5\%, \sqrt{20.92}$)
+%\item The probability that the annual return next year will be more than 10\% can be approximated accurately via computing 1 - pnorm($10\%, 7.5\%, \sqrt{\sigsqhatmle}$)
+\end{enumerate}
+\eenum\instr\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
+
+x = c(79,  91, 103,  87,  86,  91, 75)
+mean(x)
+n = length(x)
+sigsq = 15
+
+sqrt(sigsq + sigsq / n)
+
+
+x =c(18,-3, 4)
+n = length(x)
+theta = 7.5
+mean(x)
+sigsqhatmle = sum((x - theta)^2) / n
+sigsqhatmle
+sigsqhatmle * n / 2
+ssq = sum((x - mean(x))^2) / n
+ssq * n / 2
+
+alpha = 5.93
+beta = 18.17
+beta / (alpha - 1)
+n0 = alpha * 2
+sigsq0 = beta * 2 / n0
+n0
+sigsq0
+
+(sigsqhatmle * n + sigsq0 * n0) / (n + n0 - 2)
+(n0 - 2) / (n+n0-2)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
