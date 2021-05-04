@@ -6,7 +6,7 @@ This is the course homepage for Math 341 (and Masters level 650.3-02) at Queens 
 
 My lectures can be listened to as youtube tracks and lecture notes are also scanned in as PDF files contributed by students and myself.
 
-* Lecture 20 video on slack [(Prof)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec20kap.pdf)
+* Lecture 20 video on slack [(Prof)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec20kap.pdf) [(Mamataz Rubab)](https://github.com/rubab03/QC_Math_341_Spring_2021/blob/main/lectures/lec20rubab.pdf)
 * Review 2 video on slack [(Prof)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/review2.pdf)
 * Lecture 19 video on slack [(Prof)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec19kap.pdf) [(Mamataz Rubab)](https://github.com/rubab03/QC_Math_341_Spring_2021/blob/main/lectures/lec19rubab.pdf) [(Antonio DAlessandro)](https://github.com/adalessandro36/QC_Math_341_Spring_2021/blob/main/lectures/lec19dalessandro.pdf)
 * Lecture 18 video on slack [(Prof)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/lectures/lec18kap.pdf) [(Mamataz Rubab)](https://github.com/rubab03/QC_Math_341_Spring_2021/blob/main/lectures/lec18rubab.pdf) [(Antonio DAlessandro)](https://github.com/adalessandro36/QC_Math_341_Spring_2021/blob/main/lectures/lec18dalessandro.pdf)
