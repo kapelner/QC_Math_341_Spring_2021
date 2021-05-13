@@ -35,8 +35,8 @@ My lectures can be listened to as youtube tracks and lecture notes are also scan
 ## Homeworks
 
 <!--
-* Homework 8 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw08/hw08.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw08/hw08.pdf) (due 5/19)
-* Homework 7 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw07/hw07.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw07/hw07.pdf) (due 5/8)-->
+* Homework 8 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw08/hw08.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw08/hw08.pdf) (due 5/19)-->
+* Homework 7 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw07/hw07.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw07/hw07.pdf) (NOT DUE)
 * Homework 6 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw06/hw06.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw06/hw06.pdf) (due 4/26)
 * Homework 5 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw05/hw05.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw05/hw05.pdf) (due 4/18)
 * Homework 4 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw04/hw04.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/homeworks/hw04/hw04.pdf) (due 4/11)
@@ -52,7 +52,7 @@ My lectures can be listened to as youtube tracks and lecture notes are also scan
 
 * Midterm II is Wednesday, Apr 28 (on Zoom) [(exam)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/exams/midterm2/midterm2.pdf) [(solutions)](https://github.com/kapelner/QC_Math_341_Spring_2021/blob/master/exams/midterm2/midterm2_solutions.pdf)
 
-* Final is Monday, May 24 1:45-3:45PM (on zoom)
+* Final is Monday, May 24 1:45-3:45PM (on zoom) and a final review session is Sunday, May 23 6-7:15PM (on zoom)
 
 ## Practice Exams
 
