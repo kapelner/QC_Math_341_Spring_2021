@@ -82,9 +82,9 @@ BURN = 10
 
 par(mfrow = c(3, 1))
 
-acf(lambda1s[B : S], xlim = c(1, 25), ylim = c(-0.05, 0.3))
-acf(lambda2s[B : S], xlim = c(1, 25), ylim = c(-0.05, 0.3))
-acf(ms[B : S], xlim = c(1, 25), ylim = c(-0.05, 0.3))
+acf(lambda1s[BURN : S], xlim = c(1, 25), ylim = c(-0.05, 0.3))
+acf(lambda2s[BURN : S], xlim = c(1, 25), ylim = c(-0.05, 0.3))
+acf(ms[BURN : S], xlim = c(1, 25), ylim = c(-0.05, 0.3))
 THIN = 9
 #plot
 
