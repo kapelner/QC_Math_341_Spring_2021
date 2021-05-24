@@ -1,0 +1,397 @@
+%\documentclass[12pt]{article}
+\documentclass[12pt,landscape]{article}
+
+
+\include{preamble}
+\usepackage{multicol}
+
+\newcommand{\instr}{\small Your answer will consist of a lowercase string (e.g. \texttt{aebgd}) where the order of the letters does not matter. \normalsize}
+
+\title{Math 341 / 650 Spring \the\year{} \\ Final Examination}
+\author{Professor Adam Kapelner}
+
+\date{Monday, May 24, \the\year{}}
+
+\begin{document}
+\maketitle
+
+%\noindent Full Name \line(1,0){410}
+
+\thispagestyle{empty}
+
+\section*{Code of Academic Integrity}
+
+\footnotesize
+Since the college is an academic community, its fundamental purpose is the pursuit of knowledge. Essential to the success of this educational mission is a commitment to the principles of academic integrity. Every member of the college community is responsible for upholding the highest standards of honesty at all times. Students, as members of the community, are also responsible for adhering to the principles and spirit of the following Code of Academic Integrity.
+
+Activities that have the effect or intention of interfering with education, pursuit of knowledge, or fair evaluation of a student's performance are prohibited. Examples of such activities include but are not limited to the following definitions:
+
+\paragraph{Cheating} Using or attempting to use unauthorized assistance, material, or study aids in examinations or other academic work or preventing, or attempting to prevent, another from using authorized assistance, material, or study aids. Example: using an unauthorized cheat sheet in a quiz or exam, altering a graded exam and resubmitting it for a better grade, etc.
+\\
+
+\noindent By taking this exam, you acknowledge and agree to uphold this Code of Academic Integrity. \\
+
+%\begin{center}
+%\line(1,0){250} ~~~ \line(1,0){100}\\
+%~~~~~~~~~~~~~~~~~~~~~signature~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ date
+%\end{center}
+
+\normalsize
+
+\section*{Instructions}
+This exam is 110 minutes (variable time per question) and closed-book. You are allowed \textbf{three} pages (front and back) of a \qu{cheat sheet}, blank scrap paper and a graphing calculator. Please read the questions carefully. No food is allowed, only drinks. %If the question reads \qu{compute,} this means the solution will be a number otherwise you can leave the answer in \textit{any} widely accepted mathematical notation which could be resolved to an exact or approximate number with the use of a computer. I advise you to skip problems marked \qu{[Extra Credit]} until you have finished the other questions on the exam, then loop back and plug in all the holes. I also advise you to use pencil. The exam is 100 points total plus extra credit. Partial credit will be granted for incomplete answers on most of the questions. \fbox{Box} in your final answers. Good luck!
+
+\pagebreak
+
+%$\cprobsub{1}{X}{\theta} = \binomial{n}{\theta}$ with $n$ fixed, $\probsub{2}{\theta} = \betanot{\alpha}{\beta}$, $\cprobsub{3}{X}{\theta} = \poisson{\theta}$,  $\probsub{4}{\theta} = \gammanot{\alpha}{\beta}$, $\cprobsub{3}{X}{\theta} = \poisson{\theta}$
+
+
+\problem\timedsection{17} Consider the case of the beta-binomial conjugate model with fixed $n$ under the prior of indifference. Let $X_*$ be the number of successes in $n_*$ future observations from the same process.
+
+\vspace{-0.2cm}\benum\truefalsesubquestionwithpoints{26} 
+
+\begin{multicols}{2}
+
+\begin{enumerate}[(a)]
+\item $\prob{\theta} \propto \betanot{0}{0}$
+\item $\prob{\theta} = 1$
+\item $\prob{\theta} \propto 1$
+\item $\prob{\theta} \propto \binom{n}{x}\theta^x \tothepow{1-\theta}{n-x}$
+\item $\prob{\theta} \propto \theta^x \tothepow{1-\theta}{n-x}$
+\item $\prob{\theta} \propto \inverse{x! (n-x)!} \tothepow{\theta / (1-\theta)}{x}$
+\item $\cprob{X}{\theta} = 1$
+\item $\cprob{X}{\theta} \propto 1$
+\item $\cprob{X}{\theta} \propto \binom{n}{x}\theta^x \tothepow{1-\theta}{n-x}$
+\item $\cprob{X}{\theta} \propto \theta^x \tothepow{1-\theta}{n-x}$
+\item $\cprob{X}{\theta} \propto \inverse{x! (n-x)!} \tothepow{\theta / (1-\theta)}{x}$
+\item $\cprob{\theta}{X} = 1$
+\item $\cprob{\theta}{X} \propto 1$
+\item $\cprob{\theta}{X} \propto \binom{n}{x}\theta^x \tothepow{1-\theta}{n-x}$
+\item $\cprob{\theta}{X} \propto \theta^x \tothepow{1-\theta}{n-x}$
+\item $\cprob{\theta}{X} \propto \inverse{x! (n-x)!} \tothepow{\theta / (1-\theta)}{x}$
+\item $\prob{X} = 1$
+\item $\prob{X} \propto 1$
+\item $\prob{X} \propto \binom{n}{x}\theta^x \tothepow{1-\theta}{n-x}$\\
+%\item $\prob{X} \propto \theta^x \tothepow{1-\theta}{n-x}$
+%\item $\prob{X} \propto \inverse{x! (n-x)!} \tothepow{\theta / (1-\theta)}{x}$
+
+Be careful about $X$ and $X_*$ in the following problems:
+\item $\cprob{X_*}{\theta} \propto \binom{n}{x_*}\theta^{x_*} \tothepow{1-\theta}{n-x_*}$
+\item $\cprob{X_*}{\theta} \propto \theta^{x_*} \tothepow{1-\theta}{n-x_*}$
+\item $\cprob{X_*}{\theta} \propto \inverse{x_*! (n-x_*)!} \tothepow{\theta / (1-\theta)}{x_*}$
+
+\item $\cprob{X_*}{X} \propto \binom{n}{x_*}\theta^{x_*} \tothepow{1-\theta}{n-x_*}$
+\item $\cprob{X_*}{X} \propto \theta^{x} \tothepow{1-\theta}{n-x}$
+\item $\cprob{X_*}{X} \propto \theta^{x_*} \tothepow{1-\theta}{n-x_*}$
+\item $\cprob{X_*}{X} \propto B(1 + x + x_*, 1 + n - x + n_* - x_*)$
+\end{enumerate}
+
+\end{multicols}
+\eenum\instr\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\problem\timedsection{8} Recall the baseball batter example from class. Here, $\Xoneton \iid \bernoulli{\theta}$ where each $X_i$ is either a hit or not a hit. We are trying to infer $\theta$, his true probability of getting a hit (or his true \qu{batting average}). We employed the prior $\prob{\theta} = \betanot{\alpha = 78.7}{\beta = 224.8}$. Let $X = \sum_{i=1}^n X_i$. We collected the following data: $x = 11$ hits out of $n = 25$ at bats.
+
+\vspace{-0.2cm}\benum\truefalsesubquestionwithpoints{10} 
+
+\begin{enumerate}[(a)]
+\item $\theta$ is considered fixed for every one of the $n$ at bats
+\item $\prob{\theta}$ has the same support as the parameter space of $\cprob{X}{\theta}$
+\item $\prob{\theta}$ has the same support as the support of $\cprob{\theta}{X}$
+\item $\prob{\theta}$ is a principled uninformative prior even though it is not one of the three we explicitly studied in class
+\item $\prob{\theta}$ has hyperparameters that were fit using the principle of indifference
+\item With a different value of $n$, $\prob{\theta}$ could be considered uninformative
+\item $\prob{\theta}$ can be sampled from using the function \texttt{pbeta}
+\item $\prob{\theta}$ can be sampled from using the grid sampling algorithm
+\item $\thetahatmmse$ is numerically closer to $\expe{\theta}$ than $\xbar = 11/25$ 
+%$\thetahatmmAe$ is numerically closer to $\expe{\theta}$ than $\xbar = 11/25$
+%$\thetahatmAP$ is numerically closer to $\expe{\theta}$ than $\xbar = 11/25$
+\item A 95\% posterior predictive interval for the value of the next at bat could be computed by\\ ~[\texttt{qbeta}(2.5\%, $\alpha + x, \beta + n - x$), \texttt{qbeta}(97.5\%, $\alpha + x, \beta + n - x$)]
+\end{enumerate}
+\eenum\instr\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\problem\timedsection{10} We will continue with our discussion of the batter. But now we have a slightly different situation. There is reason to believe the player's $\theta$ changes during the course of his $n$ at bats (where $n$ is fixed). We denote this change point as $m$. Thus, for the first $m$ at bats, he bats with probability of getting a hit $\theta_0$ and for the remaining $n - m$ at bats, he bats with probability of getting a hit $\theta_1$ where $\theta_0 \neq \theta_1$. All at bats are considered independent. Since we are no longer interested in his lifetime career batting average, we have no need for the empirical Bayes prior of the previous problem. We now use Laplace's prior for $\theta_0$ and $\theta_1$. Since we have no strong feeling of where the change point is, we use Laplace's prior as well there. We are interested in inference for all unknown parameters using the data $x := \bracks{\xoneton}$ where each value is 1 if there is a hit at time $t$ or 0 if not.
+
+\vspace{-0.2cm}\benum\truefalsesubquestionwithpoints{14} 
+
+\begin{enumerate}[(a)]
+\item $X_1, \ldots, X_m \iid \binomial{m}{\theta_0}$
+\item The unknown parameters are $\theta_0, \theta_1, m, n, t$
+\item The unknown parameters are $\theta_0, \theta_1, m, n$
+\item The unknown parameters are $\theta_0, \theta_1, m$
+\item $\theta_0 + \theta_1 = 1$
+\item The shrinkage $\rho$ for posterior expectation of $\theta_0$ can be computed as $m\theta_0 + (n-m)\theta_1$
+\item $\prob{\theta_0} = 1$
+\item $\prob{\theta_1} = 1$
+\item $\prob{m} = 1$
+\item The likelihood of the data is the same if $m = 0$ as if $m = n$
+\item The posterior is the same value if calculated at $m = 0$ and $m = n$
+\item If $X_*$ denotes the random variable (rv) of only the next at bat, then $X_*$ is a bernoulli random variable
+\item If $X_*$ denotes the rv of the next $n_* > 1$ at bats, then $X_*$ is a binomial random variable if the data and $\theta_1$ is known
+\item If $X_*$ denotes the rv of the next $n_* > 1$ at bats, then $X_*$ is a betabinomial random variable if the data and $m$ is known
+\end{enumerate}
+\eenum\instr\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\problem\timedsection{11} \ingray{We will continue with our discussion of the batter. But now we have a slightly different situation. There is reason to believe the player's $\theta$ changes during the course of his $n$ at bats (where $n$ is fixed). We denote this change point as $m$. Thus, for the first $m$ at bats, he bats with probability of getting a hit $\theta_0$ and for the remaining $n - m$ at bats, he bats with probability of getting a hit $\theta_1$ where $\theta_0 \neq \theta_1$. All at bats are considered independent. Since we are no longer interested in his lifetime career batting average, we have no need for the empirical Bayes prior of the previous problem. We now use Laplace's prior for $\theta_0$ and $\theta_1$. Since we have no strong feeling of where the change point is, we use Laplace's prior as well there. We are interested in inference for all unknown parameters using the data $x := \bracks{\xoneton}$ where each value is 1 if there is a hit at time $t$ or 0 if not.} Letting $a := \sum_{i=1}^m x_i$ and $b = \sum_{i = m + 1}^n x_i$ (where $a$ is defined to be zero if $m=0$ and $b$ is defined to be zero if $m=n$), the likelihood of the data can be written as:
+
+\beqn
+\cprob{X}{\theta_0, \theta_1, m} = \binom{m}{a} \theta_0^a (1-\theta_0)^{m-a}  \binom{n-m}{b} \theta_1^b (1-\theta_1)^{n-m-b}.
+\eeqn
+
+\vspace{-0.2cm}\benum\truefalsesubquestionwithpoints{8} 
+
+\begin{enumerate}[(a)]
+\item The likelihood of the data can be decomposed as $\cprob{X}{\theta_0, \theta_1, m} = \cprob{X_1, \ldots, X_m}{\theta_0, m} \cprob{X_{m+1}, \ldots, X_n}{\theta_1, m}$
+\item The likelihood of the data can be decomposed as $\cprob{X}{\theta_0, \theta_1, m} = \cprob{X_1, \ldots, X_m}{\theta_0} \cprob{X_{m+1}, \ldots, X_n}{\theta_1} \cprob{X}{m}$
+\item $\cprob{\theta_0, \theta_1, m}{X} \propto \cprob{X}{\theta_0, \theta_1, m}$
+\item $k(\theta_0, \theta_1, m~|~X) = \cprob{X}{\theta_0, \theta_1, m}$ where $k$ denotes the irreducible kernel of the distribution
+\item $\cprob{\theta_0}{X, \theta_1, m} = \betanot{a + 1}{m - a + 1}$
+\item $\cprob{\theta_1}{X, \theta_0, m} = \betanot{b + 1}{m - b + 1}$
+\item $\cprob{m}{X, \theta_0, \theta_1} = \betabinomial{n}{\theta_0}{\theta_1}$
+\item $k(m~|~X, \theta_0, \theta_1) = \cprob{m}{X, \theta_0, \theta_1}$ where $k$ denotes the irreducible kernel of the distribution
+\end{enumerate}
+\eenum\instr\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\problem\timedsection{6} \ingray{\small We will continue with our discussion of the batter. But now we have a slightly different situation. There is reason to believe the player's $\theta$ changes during the course of his $n$ at bats (where $n$ is fixed). We denote this change point as $m$. Thus, for the first $m$ at bats, he bats with probability of getting a hit $\theta_0$ and for the remaining $n - m$ at bats, he bats with probability of getting a hit $\theta_1$ where $\theta_0 \neq \theta_1$. All at bats are considered independent. Since we are no longer interested in his lifetime career batting average, we have no need for the empirical Bayes prior of the previous problem. We now use Laplace's prior for $\theta_0$ and $\theta_1$. Since we have no strong feeling of where the change point is, we use Laplace's prior as well there. We are interested in inference for all unknown parameters using the data $x := \bracks{\xoneton}$ where each value is 1 if there is a hit at time $t$ or 0 if not.Letting $a := \sum_{i=1}^m x_i$ and $b = \sum_{i = m + 1}^n x_i$ (where $a$ is defined to be zero if $m=0$ and $b$ is defined to be zero if $m=n$),} \normalsize  we can show that:
+
+\beqn
+\cprob{\theta_0}{X, \theta_1, m} &=& \betanot{a + 1}{m - a + 1}, \\
+\cprob{\theta_1}{X, \theta_0, m} &=& \betanot{b + 1}{n - m - b + 1},\\
+k(m~|~X, \theta_0, \theta_1) &\propto& \binom{m}{a} \theta_0^a (1-\theta_0)^{m-a}  \binom{n-m}{b} \theta_1^b (1-\theta_1)^{-m-b}.
+\eeqn
+
+\vspace{-0.2cm}\benum\truefalsesubquestionwithpoints{13} 
+
+\begin{enumerate}[(a)]
+\item $\cprob{m}{X, \theta_0, \theta_1}$ can be solved for in closed form and thus can be computed exactly
+\item Regardless of whether (a) is true, $\cprob{m}{X, \theta_0, \theta_1}$ can be sampled from using a grid sampler
+\item Regardless of whether (b) is true, a grid sampler for $\cprob{m}{X, \theta_0, \theta_1}$ will suffer since we do not know how to set the minimum and maximum sizes of $m$ nor the grid resolution $\Delta$
+\item Using the information above, you can sample from $\cprob{\theta_0, \theta_1, m}{X}$ using a systematic sweep Gibbs sampler which will eventually converge
+\item Assume the Gibbs sampler will converge, starting at $\theta_0 = 0$, $\theta_1 = 0$ and $m = 0$ will allow for convergence
+\end{enumerate}
+\eenum\instr\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\problem\timedsection{4} In our dataset, $n = 30$. Using the three conditional distributions from the previous problem within a systematic sweep Gibbs sampler running for $S=100,000$ iterations, we find that the Gibbs sampler burns in almost immediately, so we set $B=10$. We now wish to assess sample dependence. Here are the autocorrelation plots for $\theta_0$ (top), $\theta_1$ (middle) and $m$ (bottom):
+
+\vspace{-0.3cm}
+\begin{figure}[h]
+\centering
+\includegraphics[width=9in]{acfs.png}
+\end{figure}
+
+\vspace{-0.2cm}\benum\truefalsesubquestionwithpoints{4} 
+
+\begin{enumerate}[(a)]
+%\item The samples never become independent enough to be used for inference
+\item The samples of $\theta_0$ become independent of each other more quickly than the samples of $\theta_1$ which become more quickly independent than the samples of $m$
+\item We can thin the Gibbs chain every 10 iterations to arrive at iid samples from the burned and thinned chain
+\item We can thin the Gibbs chain every 40 iterations to arrive at iid samples from the burned and thinned chain
+\item We cannot tell when to thin the Gibbs chain from these plots
+\end{enumerate}
+\eenum\instr\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\problem\timedsection{6} \ingray{In our dataset, $n = 30$. Using the three conditional distributions from the previous problem within a systematic sweep Gibbs sampler running for $S=100,000$ iterations, we find that the Gibbs sampler burns in almost immediately, so we set $B=10$.} We thinned every 40 iterations. Below is a histogram of the burned and thinned samples of $\theta_0$ (top) and $\theta_1$ (bottom):
+
+\vspace{-0.3cm}
+\begin{figure}[h]
+\centering
+\includegraphics[width=8in]{thetas.png}
+\end{figure}
+
+\vspace{-1.2cm}\benum\truefalsesubquestionwithpoints{6} 
+
+\begin{enumerate}[(a)]
+%\item The samples never become independent enough to be used for inference
+\item There are 11,110 samples for $\theta_0$
+\item There are a different number of samples for $\theta_0$ and $\theta_1$
+\item It is likely that $\cvar{\theta_0}{X} > \cvar{\theta_1}{X}$
+\item It is likely that $m$ is small relative to $n-m$
+\item It is not possible to approiximate a point estimate for $\theta_0$ given this illustration
+\item It is likely that $\theta_1 > \theta_0$
+%\item A 95\% CR for $\theta_1$ is approximately [0.025,~0.975]
+\end{enumerate}
+\eenum\instr\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\problem\timedsection{6} \ingray{In our dataset, $n = 30$. Using the three conditional distributions from the previous problem within a systematic sweep Gibbs sampler running for $S=100,000$ iterations, we find that the Gibbs sampler burns in almost immediately, so we set $B=10$. We thinned every 40 iterations. Below is a histogram of the burned and thinned samples of $\theta_0$ (top) and $\theta_1$ (bottom):}
+
+\vspace{-0.3cm}
+\begin{figure}[h]
+\centering
+\includegraphics[width=8in]{thetas.png}
+\end{figure}
+
+\vspace{-1.2cm}\benum\truefalsesubquestionwithpoints{5} 
+
+\begin{enumerate}[(a)]
+\item The MMSE estimate for $\theta_0$ is near 0.3
+\item The MAP estimate for $\theta_0$ is definitely zero
+\item The MMSE estimate for $\theta_1$ is slightly higher than 0.7
+\item The MMAE estimate for $\theta_1$ is slightly higher than 0.7
+\item The MAP estimate for $\theta_1$ is likely near the MMSE estimate for $\theta_1$
+\end{enumerate}
+\eenum\instr\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\problem\timedsection{6} \ingray{In our dataset, $n = 30$. Using the three conditional distributions from the previous problem within a systematic sweep Gibbs sampler running for $S=100,000$ iterations, we find that the Gibbs sampler burns in almost immediately, so we set $B=10$. We thinned every 40 iterations.} Below is a histogram of the burned and thinned samples of $m$:
+
+\vspace{-0.3cm}
+\begin{figure}[h]
+\centering
+\includegraphics[width=8in]{ms.png}
+\end{figure}
+
+\vspace{-1.2cm}\benum\truefalsesubquestionwithpoints{7} 
+
+\begin{enumerate}[(a)]
+\item The MMSE estimate for $m$ must be a value in the set $\braces{0, 1, \ldots, n}$
+\item The MMSE estimate for $m$ is near 4
+\item The MAP estimate for $m$ is definitely zero
+\item If we were to test that $m > 15$, the null hypothesis would likely be rejected
+\item The 95\% credible region for $m$ is $\braces{0, 1, \ldots, 14}$ and this means the true value of $m$ is one of the values in the set $\braces{0, 1, \ldots, 14}$
+\item Since there is no mass in $\cprob{m}{X}$ above $m=20$, this means it is likely we burned too soon in our Gibbs chain
+\item Since there is no mass in $\cprob{m}{X}$ above $m=20$, this means it is likely we did not thin the Gibbs chain appropriately
+\end{enumerate}
+\eenum\instr\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\problem\timedsection{5} \ingray{In our dataset, $n = 30$. Using the three conditional distributions from the previous problem within a systematic sweep Gibbs sampler running for $S=100,000$ iterations, we find that the Gibbs sampler burns in almost immediately, so we set $B=10$. We thinned every 40 iterations.} We are interested in the difference in probability of getting a hit in the assumed two periods of the players batting. Below is a histogram of the samples of the ratio of $\theta_0 / \theta_1$
+
+\vspace{-0.3cm}
+\begin{figure}[h]
+\centering
+\includegraphics[width=8in]{ratio.png}
+\end{figure}
+
+\vspace{-1.2cm}\benum\truefalsesubquestionwithpoints{3} 
+
+\begin{enumerate}[(a)]
+\item If we were to test $H_a: \theta_0 \neq \theta_1$, the null hypothesis would be rejected since there is little mass in vicinity of 1.0 in the plot above
+\item If we were to test $H_a: \theta_0 \neq \theta_1$, the null hypothesis would be rejected since there is little mass in vicinity of 0.0 in the plot above
+\item If we were to test $H_a: \theta_0 \neq \theta_1$, the null hypothesis would be rejected since there is little mass in the right tail
+\end{enumerate}
+\eenum\instr\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\problem\timedsection{17} Consider the iid normal model where both the mean and variance are unknown. After a long derivation we find that $\cprob{\theta, \sigsq}{X} = \text{NormInvGamma}(\mu = \xbar, \lambda = n, \alpha = n/2, \beta = (n-1)s^2 / 2)$.
+
+\vspace{-0.2cm}\benum\truefalsesubquestionwithpoints{17} 
+
+\begin{enumerate}[(a)]
+\item We used Jeffrey's priors for both the prior on $\theta$ and the prior on $\sigsq$
+\item The prior on $\theta$ and the prior on $\sigsq$ are the same distribution
+\item The prior we used is an informative prior
+\item It is possible to arrive at this posterior if $\prob{\theta} = \normnot{\mu_0}{\tausq}$ for specific values of the constants $\mu_0$ and $\tausq$
+\item $\cprob{\theta, \sigsq}{X} = \cprob{\theta}{X,\sigsq}\cprob{\sigsq}{X}$ where $\cprob{\sigsq}{X} = \invgammanot{\alpha}{\beta}$
+\item $\cprob{\theta, \sigsq}{X} = \cprob{\theta}{X,\sigsq}\cprob{\sigsq}{X}$ where $\cprob{\theta}{X,\sigsq}= \normnot{\mu}{\lambda}$
+\item $\cprob{\theta, \sigsq}{X} = \cprob{\sigsq}{X, \theta}\cprob{\theta}{X}$ where $\cprob{\sigsq}{X, \theta}$ has an inverse gamma distribution
+\item $\cprob{\theta, \sigsq}{X} = \cprob{\sigsq}{X, \theta}\cprob{\theta}{X}$ where $\cprob{\theta}{X}$ has a normal distribution
+
+\item You can sample from $\cprob{\theta, \sigsq}{X}$ exactly by first sampling from $\cprob{\sigsq}{X}$ to obtain $\sigsq_{samp}$ and then sampling $\theta_{samp}$ from $\cprob{\theta}{X,\sigsq = \sigsq_{samp}}$ and returning the pair $\angbraces{\theta_{samp}, \sigsq_{samp}}$
+\item You can sample from $\cprob{\theta, \sigsq}{X}$ exactly by first sampling from $\cprob{\sigsq}{X, \theta = \theta_0}$ to obtain $\sigsq_{samp}$ and then sampling $\theta_{samp}$ from $\cprob{\theta}{X,\sigsq = \sigsq_{samp}}$ and returning the pair $\angbraces{\theta_{samp}, \sigsq_{samp}}$ as long as $\theta_0$ is in the parameter space of the parametric model which in our case is any real number
+
+\item You can sample from $\cprob{\theta, \sigsq}{X}$ exactly by first sampling from $\cprob{\theta}{X}$ to obtain $\theta_{samp}$ and then sampling $\sigsq_{samp}$ from $\cprob{\sigsq}{X,\theta = \theta_{samp}}$ and returning the pair $\angbraces{\theta_{samp}, \sigsq_{samp}}$
+\item You can sample from $\cprob{\theta, \sigsq}{X}$ exactly by first sampling from $\cprob{\theta}{X, \theta = \sigsq_0}$ to obtain $\theta_{samp}$ and then sampling $\sigsq_{samp}$ from $\cprob{\sigsq}{X,\theta = \theta_{samp}}$ and returning the pair $\angbraces{\theta_{samp}, \sigsq_{samp}}$ as long as $\sigsq_0$ is in the parameter space of the parametric model which in our case is any positive real number
+
+\item $\int_0^\infty \cprob{\theta, \sigsq}{X} d\sigsq$ is a known distribution
+\item $\int_\reals \int_0^\infty \cprob{\theta, \sigsq}{X} d\sigsq d\theta$ is a known distribution
+\item The estimate $\cexpe{\theta}{X}$ has no shrinkage to the prior expectation
+\item $\cexpe{\theta}{X} = \cexpe{\theta}{X, \sigsq}$ for any value of $n$ and any value of $\sigsq$ in its parameter space
+\item $\cexpe{\sigsq}{X} = \cexpe{\sigsq}{X, \theta}$ for any value of $n$ and any value of $\theta$ in its parameter space
+\end{enumerate}
+\eenum\instr\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\problem\timedsection{9} \ingray{Consider the iid normal model where both the mean and variance are unknown. After a long derivation we find that $\cprob{\theta, \sigsq}{X} = \text{NormInvGamma}(\mu = \xbar, \lambda = n, \alpha = n/2, \beta = (n-1)s^2 / 2)$.} We sample $S = 10,000$ realizations from this posterior $\mathcal{S} := \braces{\angbraces{\theta_1, \sigsq_1}, \angbraces{\theta_2, \sigsq_2}, \ldots, \angbraces{\theta_S, \sigsq_S}}$. A sample of 1,000 points $\in \mathcal{S}$ is displayed below where $\theta$ is on the x-axis and $\sigsq$ is on the y-axis.
+
+
+
+\vspace{-0.3cm}
+\begin{figure}[h]
+\centering
+\includegraphics[width=8in]{theta_sigsqs.png}
+\end{figure}
+
+\vspace{-0.2cm}\benum\truefalsesubquestionwithpoints{9} 
+
+\begin{enumerate}[(a)]
+\item A 95\% HDR region would be rectangular in shape
+\item $\sigsqhatmmse$ can be approximated from this plot
+\item $\sigsqhatmmse$ can be approximated with $\oneover{S} \sum_{t=1}^S \sigsq_t$
+\item A 95\% CR for $\cprob{\sigsq}{X}$ can be approximated from this plot
+\item A 95\% CR for $\cprob{\sigsq}{X, \theta}$ can be approximated from this plot for every value of $\theta$ in the parameter space of $\theta$
+\item During a test of $\theta > 0.90$, the null hypothesis would likely be rejected
+\item During a test of $\sigma > 0.045$, the null hypothesis would likely be rejected
+\item Sampling a future observation $x_*$ given the data can be done as follows: first draw a random sample $\angbraces{\theta_s, \sigsq_s}$ from the set $\mathcal{S}$ and then draw $x_*$ via \texttt{rnorm}($\theta_s, \sqrt{\sigsq_s}$)
+\item Sampling a future observation $x_*$ given the data can be done as follows: first draw a random sample $\angbraces{\theta_s, \sigsq_s}$ from the set $\mathcal{S}$ and then draw $x_*$ via \texttt{rt.scaled}($n-1,\theta_s, \sqrt{\sigsq_s}$)
+\end{enumerate}
+\eenum\instr\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\problem\timedsection{5} \ingray{Consider the iid normal model where both the mean and variance are unknown. After a long derivation we find that $\cprob{\theta, \sigsq}{X} = \text{NormInvGamma}(\mu = \xbar, \lambda = n, \alpha = n/2, \beta = (n-1)s^2 / 2)$. We sample $S = 10,000$ realizations from this posterior $\mathcal{S} := \braces{\angbraces{\theta_1, \sigsq_1}, \angbraces{\theta_2, \sigsq_2}, \ldots, \angbraces{\theta_S, \sigsq_S}}$.} We now also plot a best fit line in blue which tries to approximate $\cexpe{\sigsq}{X, \theta}$ over all values of $\theta$ on the plot. To see the line clearer, we zoom in to display $\sigsq$ values between 0.002 and 0.003 (which is different from the previous plot that showed $\sigsq$ values between 0.002 and 0.006):
+
+
+
+\vspace{-0.3cm}
+\begin{figure}[h]
+\centering
+\includegraphics[width=8in]{best_fit_line.png}
+\end{figure}
+
+\vspace{-0.2cm}\benum\truefalsesubquestionwithpoints{3} 
+
+\begin{enumerate}[(a)]
+\item This line should be flat (i.e. slope zero) but it is curved only due to random variation (if we had more $S$ samples, then we would see that it is truly flat)
+\item The line should be curved but the curve should've been cupped downwards instead of cupped upwards (if we had more $S$ samples, then we would see the true relationship) 
+\item The line should be curved and the curve has a minimum point at $\theta = \xbar$
+\end{enumerate}
+\eenum\instr\pagebreak
+
+
+
+
+\end{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+
